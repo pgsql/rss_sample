@@ -11,77 +11,65 @@ Description: <%= @data["channel"]["description"] %> <br/>
 <% if  @data["channel"]["item"].class.to_s == "Array" %>
   <h3>Items <br></h3>
   <% @data["channel"]["item"].each do |data|  %>
----------------------------------------------------------<br/>
-      Title: <%= data["title"] %>
-      <% content1 = data["content"].inspect%> <br/>
-      <% if data && data["author"] %>
-        Author: <%= data["author"] %> <br/>
-      <% end  %>
+    ---------------------------------------------------------<br/>
+    Title: <%= data["title"] %>
+    <% content1 = data["content"]%> <br/>
+    <% if data && data["author"] %>
+      Author: <%= data["author"] %> <br/>
+    <% end  %>
 
-      GUID: <%= data["guid"] %> <br/>
+    GUID: <%= data["guid"] %> <br/>
 
-      <% if data && data["link"] %>
-        Link: <%= data["link"] %> <br/>
-      <% end  %>
-            <%  sample = {} %>
-            <%  content = data["content"].inspect %>
-            <%  sample = content.first if content.class.to_s == "Array"  %>
-            <%  sample = content if content.class.to_s == "Hash"  %>
-
-            <%  (content.class.to_s == "Array") && content.each do |media| %>
-              <%  if sample["fileSize"] == "" %>
-                <%  sample["fileSize"] = 0 %>
-              <% end %>
-              <% if sample && (sample["fileSize"].to_i< media["fileSize"].to_i) %>
-                <% sample = media %>
-              <% end %>
-            <% end %>
-        
-            <% if sample == {} %>
-              <% sample = data["content"]%>
-            <% end %>
-
-         
+    <% if data && data["link"] %>
+      Link: <%= data["link"] %> <br/>
+    <% end  %>
 
 
 
-      Description: <%= data["description"] %> <br/>
-      Keywords: <%= data["keywords"] %> <br/>
-      Content URL:<%= content1["url"]  unless content1.class == "Array" %> <br/>
+
+
+
+
+
+    Description: <%= data["description"] %> <br/>
+    Keywords: <%= data["keywords"] %> <br/>
+    <% if content1.class.to_s == "Hash" %>
+      Content URL:<%= content1["url"] %> <br/>
+    <% end  %>
+    <% if content1.class.to_s == "Array" %>
+      Content URL:<%= content1.first["url"]  %> <br/>
+    <% end  %>
+
 
   <% end %>
 <% else %>
 
   <h3>Item <br></h3>
   <%  data = @data["channel"]["item"] %>
-  <%  content1 = data["content"]%> <br/>
+    <%  content1 = data["content"]%> <br/>
   Title: <%= data["title"] %> <br/>
   Description: <%= data["description"] %> <br/>
   GUID: <%= data["guid"] %> <br/>
   Author: <%= data["author"] %> <br/>
   Subtitle: <%= data["subtitle"] %> <br/>
   Keywords: <%= data["keywords"] %> <br/>
-  <% content = data["content"] %>
-    <%  sample = {} %>
-     <%  sample = content.first if content.class.to_s == "Array"  %>
-            <%  sample = content if content.class.to_s == "Hash"  %>
-
-       <%  (content.class.to_s == "Array") && content.each do |media| %>
-      <% if sample && (sample["fileSize"].to_i< media["fileSize"].to_i) %>
-        <% sample = media %>
-      <% end %>
-    <% end %>
-    <% if sample == {} %>
-      <% sample = data["content"]%>
-    <% end %>
-    
-
+  <% if content1.class.to_s == "Hash" %>
+    Content URL:<%= content1["url"] %> <br/>
+  <% end  %>
+  <% if content1.class.to_s == "Array" %>
+    Content URL:<%= content1.first["url"]  %> <br/>
   <% end  %>
 
 
 
 
-  
+
+<% end  %>
+
+
+
+
+
 <h1>BODY: <br></h1>
 
 <%= @bak_data.inspect %> <br/>
@@ -89,5 +77,5 @@ Description: <%= @data["channel"]["description"] %> <br/>
 
 
 
-  
+
 

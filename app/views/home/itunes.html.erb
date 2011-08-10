@@ -5,16 +5,12 @@
  Link: <%= @data["channel"]["link"] %> <br/>
  Description: <%= @data["channel"]["description"] %> <br/>
 
-
-
-
-
 <% if  @data["channel"]["item"].class.to_s == "Array" %>
   <h3>Items <br/></h3>
   <% @data["channel"]["item"].each do |data|  %>
 ---------------------------------------------------------<br/>
       Title: <%= data["title"] %>
-      <% content1 = data["content"].inspect%> <br/>
+      <% content1 = data["content"]%> <br/>
       <% if data && data["author"] %>
         Author: <%= data["author"] %> <br/>
       <% end  %>

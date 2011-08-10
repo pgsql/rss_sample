@@ -23,7 +23,7 @@
   <% @data["channel"]["item"].each do |data|  %>
 ---------------------------------------------------------<br/>
       Title: <%= data["title"] %> 
-      <% content1 = data["content"].inspect%> <br/>
+      <% content1 = data["content"]%> <br/>
       <% if data && data["author"] %>
         Author: <%= data["author"] %> <br/>
       <% end  %>
