@@ -8878,3 +8878,87 @@ Started POST "/home/itunes" for 127.0.0.1 at Thu Aug 11 01:18:28 +0530 2011
   Parameters: {"commit"=>"Search", "authenticity_token"=>"n5TsyEQMQwoTA2osDtkKFbP8l51g5flaz8k+XZURmZc=", "utf8"=>"✓", "live_url"=>"http://share.onescreen.co/npatel/itunes.xml"}
 Rendered home/itunes.html.erb within layouts/application (4.6ms)
 Completed 200 OK in 1284ms (Views: 191.7ms | ActiveRecord: 0.0ms)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from service at /home/jyothi/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104)
+
+
+Started GET "/" for 127.0.0.1 at Thu Aug 11 01:35:16 +0530 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (14.8ms)
+Completed 200 OK in 27ms (Views: 26.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/home/itunes" for 127.0.0.1 at Thu Aug 11 01:35:19 +0530 2011
+  Processing by HomeController#itunes as HTML
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"n5TsyEQMQwoTA2osDtkKFbP8l51g5flaz8k+XZURmZc=", "utf8"=>"✓", "live_url"=>"http://www.vodcars.com/fastlanedaily/rss"}
+Rendered home/itunes.html.erb within layouts/application (5.5ms)
+Completed 500 Internal Server Error in 7737ms
+
+ActionView::Template::Error (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]):
+    30: 
+    31:       Description: <%= data["description"] %> <br/>
+    32:       Keywords: <%= data["keywords"] %> <br/>
+    33:       Content URL:<%= content1["url"]  unless content1.class == "Array" %> <br/>
+    34: 
+    35:   <% end %>
+    36: <% else %>
+  app/views/home/itunes.html.erb:33:in `_app_views_home_itunes_html_erb___249544080__612533918_0'
+  app/views/home/itunes.html.erb:10:in `each'
+  app/views/home/itunes.html.erb:10:in `_app_views_home_itunes_html_erb___249544080__612533918_0'
+
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (316.5ms)
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (327.3ms)
+
+
+Started POST "/home/itunes" for 127.0.0.1 at Thu Aug 11 01:37:03 +0530 2011
+  Processing by HomeController#itunes as HTML
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"n5TsyEQMQwoTA2osDtkKFbP8l51g5flaz8k+XZURmZc=", "utf8"=>"✓", "live_url"=>"http://www.vodcars.com/fastlanedaily/rss"}
+Rendered home/itunes.html.erb within layouts/application (2.1ms)
+Completed 500 Internal Server Error in 7906ms
+
+ActionView::Template::Error (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]):
+    30: 
+    31:       Description: <%= data["description"] %> <br/>
+    32:       Keywords: <%= data["keywords"] %> <br/>
+    33:       Content URL:<%= content1["url"]  unless content1.class == "Array" %> <br/>
+    34: 
+    35:   <% end %>
+    36: <% else %>
+  app/views/home/itunes.html.erb:33:in `_app_views_home_itunes_html_erb___249544080__612518948_0'
+  app/views/home/itunes.html.erb:10:in `each'
+  app/views/home/itunes.html.erb:10:in `_app_views_home_itunes_html_erb___249544080__612518948_0'
+
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (301.1ms)
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (311.3ms)
+
+
+Started POST "/home/itunes" for 127.0.0.1 at Thu Aug 11 01:38:58 +0530 2011
+  Processing by HomeController#itunes as HTML
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"n5TsyEQMQwoTA2osDtkKFbP8l51g5flaz8k+XZURmZc=", "utf8"=>"✓", "live_url"=>"http://www.vodcars.com/fastlanedaily/rss"}
+Rendered home/itunes.html.erb within layouts/application (343.9ms)
+Completed 200 OK in 7671ms (Views: 368.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Aug 11 01:39:10 +0530 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 29ms (Views: 28.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/home/live_sample" for 127.0.0.1 at Thu Aug 11 01:39:18 +0530 2011
+  Processing by HomeController#live_sample as HTML
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"n5TsyEQMQwoTA2osDtkKFbP8l51g5flaz8k+XZURmZc=", "utf8"=>"✓", "live_url"=>"http://share.onescreen.co/npatel/itunes.xml"}
+Rendered home/live_sample.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 1295ms (Views: 9.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/home/mrss_media" for 127.0.0.1 at Thu Aug 11 01:39:52 +0530 2011
+  Processing by HomeController#mrss_media as HTML
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"n5TsyEQMQwoTA2osDtkKFbP8l51g5flaz8k+XZURmZc=", "utf8"=>"✓", "live_url"=>"http://playlists.1sfx.net/1202220/os/2299610.xml"}
+Rendered home/mrss_media.html.erb within layouts/application (15.7ms)
+Completed 200 OK in 1886ms (Views: 27.5ms | ActiveRecord: 0.0ms)

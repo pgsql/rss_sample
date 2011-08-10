@@ -1,43 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom"
-version="2.0">
-<channel>
-<title>Your Sample Itunes Rss Podcast feed</title>
-<link>http://www.yourdomain.com/feeds.html</link>
-<language>en-us</language>
-<copyright>Copyright 2010</copyright>
-<itunes:author>The Php Techi</itunes:author>
-<itunes:explicit>no</itunes:explicit>
-<itunes:summary>Php Techi - Your Sample Itunes Rss Podcast feed</itunes:summary>
-<description>Your Sample Itunes Rss Podcast feed...</description>
-<image>
-<title>Your Sample Itunes Rss Podcast feed</title>
-<url>http://www.yourdomain.com/logo.png</url>
-<link>http://www.yourdomain.com/feeds.html</link>
-</image>
-
-<itunes:owner>
-<itunes:name>Php techi</itunes:name>
-<itunes:email>php-techi@blospot.com</itunes:email>
-</itunes:owner>
-<itunes:image href="http://www.yourdomain.com/logo.png"/>
-<itunes:category text="RSS Feed">
-<itunes:category text="Itunes Podcast "/>
-</itunes:category>
-<atom:link href="http://www.yourdomain.com/your-feed-url.rss" rel="self" type="application/rss+xml" />
-<item>
-<title>Podcast for November</title>
-<description>Podcast for Novemeber - description</description>
-<itunes:author>Php Techi</itunes:author>
-<itunes:subtitle>Podcast for Novemeber - Topic</itunes:subtitle>
-<itunes:summary>Podcast for Novemeber - iTunes summary</itunes:summary>
-<enclosure url="http://www.yourdomain.com/your-broadcast-file.mp3" length="2430792" type="audio/mp3"/>
-<guid>http://www.yourdomain.com/your-broadcast-file.mp3</guid>
-<pubDate>Sun, 31 Oct 2010 00:00:00 EDT</pubDate>
-<itunes:duration>00:05:47</itunes:duration>
-<itunes:keywords>sample,itunes,podcast</itunes:keywords>
-
-</item>
-
-</channel>
+<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/" xmlns:os="http://www.onescreen.com/mrss/">
+  <channel>
+    <title>Local.com</title>
+    <description></description>
+    <pubDate>2011-07-29 15:28:23 +0000</pubDate>
+    <generator>http://www.onescreen.com/mrss/generator/onescreen</generator>
+    <item>
+      <guid>4881083</guid>
+      <title>Swimwear Support Solutions</title>
+      <media:keywords type="plain">Swimwear, Swimsuit, Bathing suit, Swimming, Breast, Cup, Size, Pad, Padding, Cushion, Curve, Figure, Bra, Brasierre, Supportive, Bust, Bustline</media:keywords>
+      <media:description type="plain">More Magazine&#8217;s Fashion Market Director, Tara Stewart talks all things swimwear in this video series. From choosing the perfect beachside accessories to the secrets of slimming swimsuits, Tara showcases the season&#8217;s most stylish suits for every shape, size and budget. Tara also provides seasonal fashion tips, techniques and trends for the woman of style and substance, courtesy of Lands&#8217; End.</media:description>
+      <media:thumbnail url="http://images.1sfx.net/1202220/1202220_DA_OTMyNTQ5OTc=.jpg" width="512" height="288"></media:thumbnail>
+      <media:thumbnail url="http://images.1sfx.net/1202220/1202220_DA_OTMyNTQ5OTg=.jpg" width="500" height="281"></media:thumbnail>
+      <media:thumbnail url="http://images.1sfx.net/1202220/1202220_DA_OTMyNTQ5OTk=.jpg" width="150" height="84"></media:thumbnail>
+      <media:thumbnail url="http://images.1sfx.net/1202220/1202220_DA_OTMyNTUwMDA=.jpg" width="100" height="56"></media:thumbnail>
+      <media:content url="http://videos.1sfx.net/s/1202220/1202220_DA_OTMyNTU0Mjg=.mp4" medium="video" bitrate="264000" duration="" width="320" height="180"></media:content>
+      <os:content url="http://items.1sfx.net/1202220/os/4881083.xml" type="xml" description="More data about this item..."></os:content>
+    </item>
+    <item>
+      <guid>4881087</guid>
+      <title>Women's Swimwear Trends</title>
+      <media:keywords type="plain">Swimsuit, Swimwear, Bathing suit, Swim, Swimming, Pool, Ocean, Beach, Fashionable, Trendy, Trends, Dress, Skirt, Bikini, Two-piece, One-piece, Straps, Strapless</media:keywords>
+      <media:description type="plain">Are you still wearing that out-of-date swimsuit to the beach year after year?  Learn how to update your style!</media:description>
+      <media:thumbnail url="http://images.1sfx.net/1202220/1202220_DA_OTMyNTYyMzE=.jpg" width="512" height="288"></media:thumbnail>
+      <media:thumbnail url="http://images.1sfx.net/1202220/1202220_DA_OTMyNTYyMzI=.jpg" width="500" height="281"></media:thumbnail>
+      <media:thumbnail url="http://images.1sfx.net/1202220/1202220_DA_OTMyNTYyMzM=.jpg" width="150" height="84"></media:thumbnail>
+      <media:thumbnail url="http://images.1sfx.net/1202220/1202220_DA_OTMyNTYyMzQ=.jpg" width="100" height="56"></media:thumbnail>
+      <media:content url="http://videos.1sfx.net/s/1202220/1202220_DA_OTMyNTQ4OTE=.mp4" medium="video" bitrate="264000" duration="" width="320" height="180"></media:content>
+      <os:content url="http://items.1sfx.net/1202220/os/4881087.xml" type="xml" description="More data about this item..."></os:content>
+    </item>
+    <item>
+      <guid>4881091</guid>
+      <title>Choosing Shoes</title>
+      <media:keywords type="plain">Shoes, Foot, Footwear, Health, Fitness, Walk, Run, Jog, Athletic, Sole, Heel, Toes, Feet, Arch, Toning, Insoles, Orthodics, Insert</media:keywords>
+      <media:description type="plain">In this video, Certified Pedorthist and Executive Vice President of Aetrex Worldwide, Inc. Matt Schwartz provides an overview of the video series discussing: 
+&#8226;	Feet &amp; how they work
+&#8226;	Foot type, their setbacks &amp; potential solutions
+&#8226;	Orthotics
+&#8226;	Choosing shoes that look good &amp; feel great 
+ 
+</media:description>
+      <media:thumbnail url="http://images.1sfx.net/1202220/1202220_DA_OTMyNTYxMTE=.jpg" width="512" height="288"></media:thumbnail>
+      <media:thumbnail url="http://images.1sfx.net/1202220/1202220_DA_OTMyNTYxMTI=.jpg" width="500" height="281"></media:thumbnail>
+      <media:thumbnail url="http://images.1sfx.net/1202220/1202220_DA_OTMyNTYxMTM=.jpg" width="150" height="84"></media:thumbnail>
+      <media:thumbnail url="http://images.1sfx.net/1202220/1202220_DA_OTMyNTYxMTQ=.jpg" width="100" height="56"></media:thumbnail>
+      <media:content url="http://videos.1sfx.net/s/1202220/1202220_DA_OTMyNTUxNDI=.mp4" medium="video" bitrate="264000" duration="" width="320" height="180"></media:content>
+      <os:content url="http://items.1sfx.net/1202220/os/4881091.xml" type="xml" description="More data about this item..."></os:content>
+    </item>
+    <item>
+      <guid>4881084</guid>
+      <title>The Secrets of Slimming Swimsuits</title>
+      <media:keywords type="plain">Swimsuit, Swimwear, Bathing suit, Swim, Ocean, Beach, Pool, Summer, Slim, Slenderize, Slender, Skinny, Thin, Fashion, Control</media:keywords>
+      <media:description type="plain">More Magazine&#8217;s Fashion Market Director, Tara Stewart talks all things swimwear in this video series. From choosing the perfect beachside accessories to the secrets of slimming swimsuits, Tara showcases the season&#8217;s most stylish suits for every shape, size and budget. Tara also provides seasonal fashion tips, techniques and trends for the woman of style and substance, courtesy of Lands&#8217; End.</media:description>
+      <media:thumbnail url="http://images.1sfx.net/1202220/1202220_DA_OTMyNTU0NjA=.jpg" width="512" height="288"></media:thumbnail>
+      <media:thumbnail url="http://images.1sfx.net/1202220/1202220_DA_OTMyNTU0NjE=.jpg" width="500" height="281"></media:thumbnail>
+      <media:thumbnail url="http://images.1sfx.net/1202220/1202220_DA_OTMyNTU0NjI=.jpg" width="150" height="84"></media:thumbnail>
+      <media:thumbnail url="http://images.1sfx.net/1202220/1202220_DA_OTMyNTU0NjM=.jpg" width="100" height="56"></media:thumbnail>
+      <media:content url="http://videos.1sfx.net/s/1202220/1202220_DA_OTMyNTQ5MDY=.mp4" medium="video" bitrate="264000" duration="" width="320" height="180"></media:content>
+      <os:content url="http://items.1sfx.net/1202220/os/4881084.xml" type="xml" description="More data about this item..."></os:content>
+    </item>
+    <item>
+      <guid>4881085</guid>
+      <title>Choosing a Swim Skirt</title>
+      <media:keywords type="plain">Swimsuit, Swimwear, Skirt, Swim, Dress, Coverage, Mini, Two-piece, One-piece, Bikini, Top</media:keywords>
+      <media:description type="plain">Learn how to amp up your look on the beach this summer with this fun new trend.</media:description>
+      <media:thumbnail url="http://images.1sfx.net/1202220/1202220_DA_OTMyNTYwMzg=.jpg" width="512" height="288"></media:thumbnail>
+      <media:thumbnail url="http://images.1sfx.net/1202220/1202220_DA_OTMyNTYwMzk=.jpg" width="500" height="281"></media:thumbnail>
+      <media:thumbnail url="http://images.1sfx.net/1202220/1202220_DA_OTMyNTYwNDA=.jpg" width="150" height="84"></media:thumbnail>
+      <media:thumbnail url="http://images.1sfx.net/1202220/1202220_DA_OTMyNTYwNDE=.jpg" width="100" height="56"></media:thumbnail>
+      <media:content url="http://videos.1sfx.net/s/1202220/1202220_DA_OTMyNTU1NTU=.mp4" medium="video" bitrate="264000" duration="" width="320" height="180"></media:content>
+      <os:content url="http://items.1sfx.net/1202220/os/4881085.xml" type="xml" description="More data about this item..."></os:content>
+    </item>
+  </channel>
 </rss>
