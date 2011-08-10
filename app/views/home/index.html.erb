@@ -5,8 +5,8 @@
 <br/> <br/>
 <%= form_tag(:controller => "home", :action => "live_sample") do %>
   <div class="field">
-  <%= label_tag(:q, "Enter the LIVE URL") %>
-  <%= text_field_tag(:live_url,"http://share.onescreen.co/npatel/itunes.xml") %>
+  <%= label_tag(:q, "Enter the any LiveURL itunes/MRSS/Divx") %>
+  <%= text_field_tag(:live_url,"http://share.onescreen.co/npatel/itunes.xml") %> 
   <%= submit_tag("Search") %>
   </div>
 <% end %>
@@ -19,30 +19,21 @@
 
 <%= form_tag(:controller => "home", :action => "itunes") do %>
   <div class="field">
-  <%= label_tag(:q, "ITUNES Sample:") %>
-  <%= text_field_tag(:itunes_url,"itunes.xml") %>
+  <%= label_tag(:q, "ITUNES Live URL:") %>
+  <%= text_field_tag(:live_url,"http://www.vodcars.com/fastlanedaily/rss") %>
   <%= submit_tag("Search") %>
   </div>
 <% end %>
 
 
-<br/> <br/>
-<br/> <br/>
-<%= form_tag(:controller => "home", :action => "mrss") do %>
-  <div class="field">
-  <%= label_tag(:q, "MRSS Sample:") %>
-  <%= text_field_tag(:mrss_url,"mrss.xml") %>
-  <%= submit_tag("Search") %>
-  </div>
-<% end %>
 
 
 <br/> <br/>
 <br/> <br/>
 <%= form_tag(:controller => "home", :action => "mrss_media") do %>
   <div class="field">
-  <%= label_tag(:q, "MRSS Sample with multile media content:") %>
-  <%= text_field_tag(:mrss_media_url,"mrss_media.xml") %>
+  <%= label_tag(:q, "MRSS Live URL with multile media content:") %>
+  <%= text_field_tag(:live_url,"http://playlists.1sfx.net/1202220/os/2299610.xml") %>
   <%= submit_tag("Search") %>
   </div>
 <% end %>
@@ -52,8 +43,8 @@
 <br/> <br/>
 <%= form_tag(:controller => "home", :action => "divx") do %>
   <div class="field">
-  <%= label_tag(:q, "DIVX Sample:") %>
-  <%= text_field_tag(:divx_url,"divx.xml") %>
+  <%= label_tag(:q, "DIVX LIVE URL:") %>
+  <%= text_field_tag(:divx_url,"http://playlists.1sfx.net/1202220/divx/2299610.xml") %>
   <%= submit_tag("Search") %>
   </div>
 <% end %>

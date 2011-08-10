@@ -7,19 +7,51 @@
 
 
 
-<h3>Items <br></h3>
 
-<% @data["channel"]["item"].each do |data|  %>
-    Title: <%= data["title"] %> <br/>
-    GUID: <%= data["guid"] %> <br/>
-    URL: <%= data["enclosure"]["url"] %> <br/>
-    Subtitle <%= data["subtitle"] %> <br/>
-    Duration: <%= data["duration"] %> <br/>
-    PubDate: <%= data["pubDate"] %> <br/>
-<br/>
-<% end %>
+
+<% if  @data["channel"]["item"].class.to_s == "Array" %>
+  <h3>Items <br/></h3>
+  <% @data["channel"]["item"].each do |data|  %>
+---------------------------------------------------------<br/>
+      Title: <%= data["title"] %>
+      <% content1 = data["content"].inspect%> <br/>
+      <% if data && data["author"] %>
+        Author: <%= data["author"] %> <br/>
+      <% end  %>
+
+      GUID: <%= data["guid"] %> <br/>
+
+      <% if data && data["link"] %>
+        Link: <%= data["link"] %> <br/>
+      <% end  %>
+
+
+      <% if data && data["enclosure"] %>
+        URL:  <%= data["enclosure"]["url"] unless data["enclosure"].blank?  %>
+      <% end %>
+
+
+
+      Description: <%= data["description"] %> <br/>
+      Keywords: <%= data["keywords"] %> <br/>
+      Content URL:<%= content1["url"]  unless content1.class == "Array" %> <br/>
+
+  <% end %>
+<% else %>
+
+
+  <h3>Item <br></h3>
+  <%  data = @data["channel"]["item"] %>
+  <%  content1 = data["content"]%> <br/>
+  Title: <%= data["title"] %> <br/>
+  Description: <%= data["description"] %> <br/>
+  GUID: <%= data["guid"] %> <br/>
+  Author: <%= data["author"] %> <br/>
+  Subtitle: <%= data["subtitle"] %> <br/>
+  Keywords: <%= data["keywords"] %> <br/>
+<% end  %>
+
 
 <h1>BODY: <br></h1>
 
 <%= @bak_data.inspect %> <br/>
-

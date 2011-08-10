@@ -19,18 +19,24 @@ class HomeController < ApplicationController
   def mrss_media
   	begin
       content = ""
-      content = IO.read(params['mrss_media_url'])
+      open(params['live_url']) do |s| content = s.read end
+      File.open('test2.xml', 'w') do |f2|
+        f2.puts content
+      end
       @data =  Hash.from_xml(content)
       puts @data.inspect
     rescue Exception => e
-      raise "Unable to read the file: #{e.message}"
+     raise "Unable to read the file: #{e.message}"
     end
   end
   
   def itunes
     begin
       content = ""
-      content = IO.read(params['itunes_url'])
+      open(params['live_url']) do |s| content = s.read end
+      File.open('test2.xml', 'w') do |f2|
+        f2.puts content
+      end
       @data =  Hash.from_xml(content)
       puts @data.inspect
     rescue Exception => e

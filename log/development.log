@@ -5751,3 +5751,2167 @@ Started POST "/home/live_sample" for 127.0.0.1 at Wed Aug 10 22:46:18 +0530 2011
   Parameters: {"commit"=>"Search", "authenticity_token"=>"n5TsyEQMQwoTA2osDtkKFbP8l51g5flaz8k+XZURmZc=", "utf8"=>"✓", "live_url"=>"http://playlists.1sfx.net/1000500/os/1106080.xml"}
 Rendered home/live_sample.html.erb within layouts/application (6.6ms)
 Completed 200 OK in 1902ms (Views: 11.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Aug 10 23:01:59 +0530 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 13ms (Views: 12.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/home/live_sample" for 127.0.0.1 at Wed Aug 10 23:02:05 +0530 2011
+  Processing by HomeController#live_sample as HTML
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"n5TsyEQMQwoTA2osDtkKFbP8l51g5flaz8k+XZURmZc=", "utf8"=>"✓", "live_url"=>"http://playlists.1sfx.net/1202220/os/2299610.xml"}
+Rendered home/live_sample.html.erb within layouts/application (5.5ms)
+Completed 500 Internal Server Error in 1410ms
+
+ActionView::Template::Error (can't convert String into Integer):
+    29:       <% if data && data["link"] %>
+    30:         Link: <%= data["link"] %> <br/>
+    31:       <% end  %>
+    32:       URL: <%= data["media"]["url"] unless data["media"].blank?  %> <%= data["content"]["url"] unless data["content"].blank?  %><%= data["enclosure"]["url"] unless data["enclosure"].blank?  %><br/>
+    33:       Description: <%= data["description"] %> <br/>
+    34:       Keywords <%= data["keywords"] %> <br/>
+    35:       Content URL:<%= content1["url"]  unless content1.class == "Array" %> <br/>
+  app/views/home/live_sample.html.erb:32:in `[]'
+  app/views/home/live_sample.html.erb:32:in `_app_views_home_live_sample_html_erb___446140125__613196148_0'
+  app/views/home/live_sample.html.erb:23:in `each'
+  app/views/home/live_sample.html.erb:23:in `_app_views_home_live_sample_html_erb___446140125__613196148_0'
+
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (12.1ms)
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (18.7ms)
+
+
+Started POST "/home/live_sample" for 127.0.0.1 at Wed Aug 10 23:06:12 +0530 2011
+  Processing by HomeController#live_sample as HTML
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"n5TsyEQMQwoTA2osDtkKFbP8l51g5flaz8k+XZURmZc=", "utf8"=>"✓", "live_url"=>"http://playlists.1sfx.net/1202220/os/2299610.xml"}
+Rendered home/live_sample.html.erb within layouts/application (16.5ms)
+Completed 200 OK in 2457ms (Views: 27.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/home/live_sample" for 127.0.0.1 at Wed Aug 10 23:06:37 +0530 2011
+  Processing by HomeController#live_sample as HTML
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"n5TsyEQMQwoTA2osDtkKFbP8l51g5flaz8k+XZURmZc=", "utf8"=>"✓", "live_url"=>"http://playlists.1sfx.net/1202220/os/2299610.xml"}
+Rendered home/live_sample.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 2340ms (Views: 12.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/home/live_sample" for 127.0.0.1 at Wed Aug 10 23:11:08 +0530 2011
+  Processing by HomeController#live_sample as HTML
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"n5TsyEQMQwoTA2osDtkKFbP8l51g5flaz8k+XZURmZc=", "utf8"=>"✓", "live_url"=>"http://playlists.1sfx.net/1202220/os/2299610.xml"}
+Rendered home/live_sample.html.erb within layouts/application (16.5ms)
+Completed 200 OK in 1653ms (Views: 27.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/home/live_sample" for 127.0.0.1 at Wed Aug 10 23:11:33 +0530 2011
+  Processing by HomeController#live_sample as HTML
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"n5TsyEQMQwoTA2osDtkKFbP8l51g5flaz8k+XZURmZc=", "utf8"=>"✓", "live_url"=>"http://playlists.1sfx.net/1202220/os/2299610.xml"}
+Rendered home/live_sample.html.erb within layouts/application (105.2ms)
+Completed 200 OK in 1229ms (Views: 116.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/home/live_sample" for 127.0.0.1 at Wed Aug 10 23:12:20 +0530 2011
+  Processing by HomeController#live_sample as HTML
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"n5TsyEQMQwoTA2osDtkKFbP8l51g5flaz8k+XZURmZc=", "utf8"=>"✓", "live_url"=>"http://playlists.1sfx.net/1202220/os/2299610.xml"}
+Rendered home/live_sample.html.erb within layouts/application (16.9ms)
+Completed 200 OK in 1982ms (Views: 28.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/home/live_sample" for 127.0.0.1 at Wed Aug 10 23:13:16 +0530 2011
+  Processing by HomeController#live_sample as HTML
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"n5TsyEQMQwoTA2osDtkKFbP8l51g5flaz8k+XZURmZc=", "utf8"=>"✓", "live_url"=>"http://share.onescreen.co/npatel/itunes.xml"}
+Rendered home/live_sample.html.erb within layouts/application (17.5ms)
+Completed 200 OK in 1519ms (Views: 28.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Aug 10 23:13:22 +0530 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 168ms (Views: 166.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/home/live_sample" for 127.0.0.1 at Wed Aug 10 23:13:32 +0530 2011
+  Processing by HomeController#live_sample as HTML
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"n5TsyEQMQwoTA2osDtkKFbP8l51g5flaz8k+XZURmZc=", "utf8"=>"✓", "live_url"=>"http://www.vodcars.com/fastlanedaily/rss"}
+Rendered home/live_sample.html.erb within layouts/application (14.8ms)
+Completed 500 Internal Server Error in 8143ms
+
+ActionView::Template::Error (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.first):
+    37:       <% if !data["content"].class.to_s == "Array" %>
+    38:         URL: <%= data["media"]["url"] unless data["media"].blank?  %> <%= data["content"]["url"] unless data["content"].blank?  %><%= data["enclosure"]["url"] unless data["enclosure"].blank?  %><br/>
+    39:       <% else %>
+    40:         URL: <%=  data["content"].first && data["content"].first["url"] %> <br/>
+    41:       <% end  %>
+    42:         
+    43:       Description: <%= data["description"] %> <br/>
+  app/views/home/live_sample.html.erb:40:in `_app_views_home_live_sample_html_erb___446140125__612665518_0'
+  app/views/home/live_sample.html.erb:23:in `each'
+  app/views/home/live_sample.html.erb:23:in `_app_views_home_live_sample_html_erb___446140125__612665518_0'
+
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (278.7ms)
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (369.1ms)
+
+
+Started POST "/home/live_sample" for 127.0.0.1 at Wed Aug 10 23:14:15 +0530 2011
+  Processing by HomeController#live_sample as HTML
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"n5TsyEQMQwoTA2osDtkKFbP8l51g5flaz8k+XZURmZc=", "utf8"=>"✓", "live_url"=>"http://www.vodcars.com/fastlanedaily/rss"}
+Rendered home/live_sample.html.erb within layouts/application (302.8ms)
+Completed 200 OK in 8154ms (Views: 314.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/home/live_sample" for 127.0.0.1 at Wed Aug 10 23:16:46 +0530 2011
+  Processing by HomeController#live_sample as HTML
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"n5TsyEQMQwoTA2osDtkKFbP8l51g5flaz8k+XZURmZc=", "utf8"=>"✓", "live_url"=>"http://www.vodcars.com/fastlanedaily/rss"}
+Rendered home/live_sample.html.erb within layouts/application (7.1ms)
+Completed 500 Internal Server Error in 7343ms
+
+ActionView::Template::Error (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.first):
+    37:       <% if !data["content"].class.to_s == "Array" %>
+    38:         URL: <%= data["content"]["url"] unless data["content"].blank?  %><%= data["enclosure"]["url"] unless data["enclosure"].blank?  %><br/>
+    39:       <% else %>
+    40:         URL: <%=  data["content"].first && data["content"].first["url"] %> <br/>
+    41:       <% end  %>
+    42: 
+    43:       <% if data && data["media"] %>
+  app/views/home/live_sample.html.erb:40:in `_app_views_home_live_sample_html_erb___446140125__615701648_0'
+  app/views/home/live_sample.html.erb:23:in `each'
+  app/views/home/live_sample.html.erb:23:in `_app_views_home_live_sample_html_erb___446140125__615701648_0'
+
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.8ms)
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (406.8ms)
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (425.1ms)
+
+
+Started POST "/home/live_sample" for 127.0.0.1 at Wed Aug 10 23:17:32 +0530 2011
+  Processing by HomeController#live_sample as HTML
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"n5TsyEQMQwoTA2osDtkKFbP8l51g5flaz8k+XZURmZc=", "utf8"=>"✓", "live_url"=>"http://www.vodcars.com/fastlanedaily/rss"}
+Rendered home/live_sample.html.erb within layouts/application (291.9ms)
+Completed 200 OK in 6645ms (Views: 304.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/home/live_sample" for 127.0.0.1 at Wed Aug 10 23:17:55 +0530 2011
+  Processing by HomeController#live_sample as HTML
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"n5TsyEQMQwoTA2osDtkKFbP8l51g5flaz8k+XZURmZc=", "utf8"=>"✓", "live_url"=>"http://www.vodcars.com/fastlanedaily/rss"}
+Rendered home/live_sample.html.erb within layouts/application (326.9ms)
+Completed 200 OK in 7822ms (Views: 341.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Aug 10 23:18:12 +0530 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 148ms (Views: 147.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/home/live_sample" for 127.0.0.1 at Wed Aug 10 23:18:14 +0530 2011
+  Processing by HomeController#live_sample as HTML
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"n5TsyEQMQwoTA2osDtkKFbP8l51g5flaz8k+XZURmZc=", "utf8"=>"✓", "live_url"=>"http://playlists.1sfx.net/1202220/os/2299610.xml"}
+Rendered home/live_sample.html.erb within layouts/application (21.2ms)
+Completed 200 OK in 1933ms (Views: 38.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/home/live_sample" for 127.0.0.1 at Wed Aug 10 23:18:32 +0530 2011
+  Processing by HomeController#live_sample as HTML
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"n5TsyEQMQwoTA2osDtkKFbP8l51g5flaz8k+XZURmZc=", "utf8"=>"✓", "live_url"=>"http://share.onescreen.co/npatel/itunes.xml"}
+Rendered home/live_sample.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 1491ms (Views: 11.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Aug 10 23:18:51 +0530 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (17.6ms)
+Completed 200 OK in 30ms (Views: 28.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/home/live_sample" for 127.0.0.1 at Wed Aug 10 23:18:54 +0530 2011
+  Processing by HomeController#live_sample as HTML
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"n5TsyEQMQwoTA2osDtkKFbP8l51g5flaz8k+XZURmZc=", "utf8"=>"✓", "live_url"=>"http://playlists.1sfx.net/1202220/simple/2299610.xml"}
+Rendered home/live_sample.html.erb within layouts/application (3.0ms)
+Completed 500 Internal Server Error in 1946ms
+
+ActionView::Template::Error (can't convert String into Integer):
+    37:       <% if !data["content"].class.to_s == "Array" %>
+    38:         URL: <%= data["content"]["url"] unless data["content"].blank?  %><%= data["enclosure"]["url"] unless data["enclosure"].blank?  %><br/>
+    39:       <% elsif !data["content"].blank? %>
+    40:         URL: <%=  data["content"].first && data["content"].first["url"] %> <br/>
+    41:       <% end  %>
+    42: 
+    43:       <% if data && data["media"] %>
+  app/views/home/live_sample.html.erb:40:in `[]'
+  app/views/home/live_sample.html.erb:40:in `_app_views_home_live_sample_html_erb___446140125__612645828_0'
+  app/views/home/live_sample.html.erb:23:in `each'
+  app/views/home/live_sample.html.erb:23:in `_app_views_home_live_sample_html_erb___446140125__612645828_0'
+
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (11.5ms)
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (19.5ms)
+
+
+Started POST "/home/live_sample" for 127.0.0.1 at Wed Aug 10 23:19:36 +0530 2011
+  Processing by HomeController#live_sample as HTML
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"n5TsyEQMQwoTA2osDtkKFbP8l51g5flaz8k+XZURmZc=", "utf8"=>"✓", "live_url"=>"http://playlists.1sfx.net/1202220/simple/2299610.xml"}
+Rendered home/live_sample.html.erb within layouts/application (15.8ms)
+Completed 200 OK in 1118ms (Views: 27.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/home/live_sample" for 127.0.0.1 at Wed Aug 10 23:19:54 +0530 2011
+  Processing by HomeController#live_sample as HTML
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"n5TsyEQMQwoTA2osDtkKFbP8l51g5flaz8k+XZURmZc=", "utf8"=>"✓", "live_url"=>"http://playlists.1sfx.net/1202220/simple/2299610.xml"}
+Rendered home/live_sample.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 1078ms (Views: 15.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/home/live_sample" for 127.0.0.1 at Wed Aug 10 23:20:02 +0530 2011
+  Processing by HomeController#live_sample as HTML
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"n5TsyEQMQwoTA2osDtkKFbP8l51g5flaz8k+XZURmZc=", "utf8"=>"✓", "live_url"=>"http://playlists.1sfx.net/1202220/simple/2299610.xml"}
+Rendered home/live_sample.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 1259ms (Views: 11.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/home/live_sample" for 127.0.0.1 at Wed Aug 10 23:21:02 +0530 2011
+  Processing by HomeController#live_sample as HTML
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"n5TsyEQMQwoTA2osDtkKFbP8l51g5flaz8k+XZURmZc=", "utf8"=>"✓", "live_url"=>"http://playlists.1sfx.net/1202220/simple/2299610.xml"}
+Rendered home/live_sample.html.erb within layouts/application (14.7ms)
+Completed 200 OK in 1115ms (Views: 25.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/home/live_sample" for 127.0.0.1 at Wed Aug 10 23:21:49 +0530 2011
+  Processing by HomeController#live_sample as HTML
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"n5TsyEQMQwoTA2osDtkKFbP8l51g5flaz8k+XZURmZc=", "utf8"=>"✓", "live_url"=>"http://playlists.1sfx.net/1202220/simple/2299610.xml"}
+Rendered home/live_sample.html.erb within layouts/application (14.7ms)
+Completed 200 OK in 1113ms (Views: 25.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/home/live_sample" for 127.0.0.1 at Wed Aug 10 23:22:17 +0530 2011
+  Processing by HomeController#live_sample as HTML
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"n5TsyEQMQwoTA2osDtkKFbP8l51g5flaz8k+XZURmZc=", "utf8"=>"✓", "live_url"=>"http://items.1sfx.net/1202220/os/4881083.xml"}
+Rendered home/live_sample.html.erb within layouts/application (14.1ms)
+Completed 200 OK in 1547ms (Views: 25.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Aug 10 23:22:27 +0530 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (17.5ms)
+Completed 200 OK in 29ms (Views: 28.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/home/live_sample" for 127.0.0.1 at Wed Aug 10 23:22:31 +0530 2011
+  Processing by HomeController#live_sample as HTML
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"n5TsyEQMQwoTA2osDtkKFbP8l51g5flaz8k+XZURmZc=", "utf8"=>"✓", "live_url"=>"http://playlists.1sfx.net/1202220/divx/2299610.xml"}
+Rendered home/live_sample.html.erb within layouts/application (16.4ms)
+Completed 200 OK in 1423ms (Views: 31.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/home/live_sample" for 127.0.0.1 at Wed Aug 10 23:22:58 +0530 2011
+  Processing by HomeController#live_sample as HTML
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"n5TsyEQMQwoTA2osDtkKFbP8l51g5flaz8k+XZURmZc=", "utf8"=>"✓", "live_url"=>"http://share.onescreen.co/npatel/itunes.xml"}
+Rendered home/live_sample.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 1120ms (Views: 22.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Aug 10 23:23:08 +0530 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (18.2ms)
+Completed 200 OK in 31ms (Views: 29.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/home/live_sample" for 127.0.0.1 at Wed Aug 10 23:23:12 +0530 2011
+  Processing by HomeController#live_sample as HTML
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"n5TsyEQMQwoTA2osDtkKFbP8l51g5flaz8k+XZURmZc=", "utf8"=>"✓", "live_url"=>"http://www.vodcars.com/fastlanedaily/rss"}
+Rendered home/live_sample.html.erb within layouts/application (287.2ms)
+Completed 200 OK in 8350ms (Views: 306.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Aug 10 23:23:45 +0530 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (18.7ms)
+Completed 200 OK in 32ms (Views: 30.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/home/live_sample" for 127.0.0.1 at Wed Aug 10 23:23:50 +0530 2011
+  Processing by HomeController#live_sample as HTML
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"n5TsyEQMQwoTA2osDtkKFbP8l51g5flaz8k+XZURmZc=", "utf8"=>"✓", "live_url"=>"http://playlists.1sfx.net/1202220/os/2299610.xml"}
+Rendered home/live_sample.html.erb within layouts/application (17.9ms)
+Completed 200 OK in 1424ms (Views: 29.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/home/live_sample" for 127.0.0.1 at Wed Aug 10 23:33:57 +0530 2011
+  Processing by HomeController#live_sample as HTML
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"n5TsyEQMQwoTA2osDtkKFbP8l51g5flaz8k+XZURmZc=", "utf8"=>"✓", "live_url"=>"http://playlists.1sfx.net/1202220/divx/2299610.xml"}
+Rendered home/live_sample.html.erb within layouts/application (17.3ms)
+Completed 200 OK in 1105ms (Views: 28.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Aug 10 23:35:01 +0530 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 13ms (Views: 12.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/home/live_sample" for 127.0.0.1 at Wed Aug 10 23:35:07 +0530 2011
+  Processing by HomeController#live_sample as HTML
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"n5TsyEQMQwoTA2osDtkKFbP8l51g5flaz8k+XZURmZc=", "utf8"=>"✓", "live_url"=>"http://share.onescreen.co/npatel/itunes.xml"}
+Rendered home/live_sample.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 1348ms (Views: 24.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/home/live_sample" for 127.0.0.1 at Wed Aug 10 23:35:26 +0530 2011
+  Processing by HomeController#live_sample as HTML
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"n5TsyEQMQwoTA2osDtkKFbP8l51g5flaz8k+XZURmZc=", "utf8"=>"✓", "live_url"=>"http://www.vodcars.com/fastlanedaily/rss"}
+Rendered home/live_sample.html.erb within layouts/application (113.7ms)
+Completed 200 OK in 6612ms (Views: 157.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Aug 10 23:35:56 +0530 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (24.8ms)
+Completed 200 OK in 39ms (Views: 37.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/home/live_sample" for 127.0.0.1 at Wed Aug 10 23:36:04 +0530 2011
+  Processing by HomeController#live_sample as HTML
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"n5TsyEQMQwoTA2osDtkKFbP8l51g5flaz8k+XZURmZc=", "utf8"=>"✓", "live_url"=>"http://playlists.1sfx.net/1202220/os/2299610.xml"}
+Rendered home/live_sample.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 1679ms (Views: 30.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/home/live_sample" for 127.0.0.1 at Wed Aug 10 23:36:28 +0530 2011
+  Processing by HomeController#live_sample as HTML
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"n5TsyEQMQwoTA2osDtkKFbP8l51g5flaz8k+XZURmZc=", "utf8"=>"✓", "live_url"=>"http://playlists.1sfx.net/1202220/simple/2299610.xml"}
+Rendered home/live_sample.html.erb within layouts/application (17.1ms)
+Completed 200 OK in 1362ms (Views: 28.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Aug 10 23:36:40 +0530 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (18.5ms)
+Completed 200 OK in 31ms (Views: 29.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/home/live_sample" for 127.0.0.1 at Wed Aug 10 23:36:46 +0530 2011
+  Processing by HomeController#live_sample as HTML
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"n5TsyEQMQwoTA2osDtkKFbP8l51g5flaz8k+XZURmZc=", "utf8"=>"✓", "live_url"=>"http://items.1sfx.net/1202220/os/4881083.xml"}
+Rendered home/live_sample.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 1288ms (Views: 25.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/home/live_sample" for 127.0.0.1 at Wed Aug 10 23:37:05 +0530 2011
+  Processing by HomeController#live_sample as HTML
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"n5TsyEQMQwoTA2osDtkKFbP8l51g5flaz8k+XZURmZc=", "utf8"=>"✓", "live_url"=>"http://playlists.1sfx.net/1202220/divx/2299610.xml"}
+Rendered home/live_sample.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 1386ms (Views: 28.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Aug 10 23:43:14 +0530 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (17.4ms)
+Completed 200 OK in 29ms (Views: 27.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Aug 10 23:44:35 +0530 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 13ms (Views: 12.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Aug 10 23:44:51 +0530 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (18.9ms)
+Completed 200 OK in 31ms (Views: 29.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Aug 10 23:45:08 +0530 2011
+  Processing by HomeController#index as HTML
+ERROR: compiling _app_views_home_index_html_erb__315390625__613601788_0 RAISED compile error
+/home/jyothi/projects/rss/app/views/home/index.html.erb:12: syntax error, unexpected kEND, expecting ')'
+'); end 
+       ^
+/home/jyothi/projects/rss/app/views/home/index.html.erb:68: syntax error, unexpected kENSURE, expecting ')'
+/home/jyothi/projects/rss/app/views/home/index.html.erb:70: syntax error, unexpected kEND, expecting ')'
+Function body:           def _app_views_home_index_html_erb__315390625__613601788_0(local_assigns)
+            _old_virtual_path, @_virtual_path = @_virtual_path, "home/index";_old_output_buffer = @output_buffer;;@output_buffer = ActionView::OutputBuffer.new;@output_buffer.safe_concat('<h1>RSS Feed Reader</h1>
+
+
+<br/> <br/>
+<br/> <br/>
+');@output_buffer.append=  form_tag(:controller => "home", :action => "live_sample") do @output_buffer.safe_concat('
+');@output_buffer.safe_concat('  <div class="field">
+  ');@output_buffer.append= ( label_tag(:q, "Enter the any LiveURL (Itunes/MRSS/Divx)" );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  ');@output_buffer.append= ( text_field_tag(:live_url,"http://share.onescreen.co/npatel/itunes.xml") );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  ');@output_buffer.append= ( submit_tag("Search") );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  </div>
+'); end 
+@output_buffer.safe_concat('
+
+
+<br/> <br/>
+<br/> <br/>
+
+
+');@output_buffer.append=  form_tag(:controller => "home", :action => "itunes") do @output_buffer.safe_concat('
+');@output_buffer.safe_concat('  <div class="field">
+  ');@output_buffer.append= ( label_tag(:q, "ITUNES Sample:") );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  ');@output_buffer.append= ( text_field_tag(:itunes_url,"itunes.xml") );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  ');@output_buffer.append= ( submit_tag("Search") );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  </div>
+'); end 
+@output_buffer.safe_concat('
+
+<br/> <br/>
+<br/> <br/>
+');@output_buffer.append=  form_tag(:controller => "home", :action => "mrss") do @output_buffer.safe_concat('
+');@output_buffer.safe_concat('  <div class="field">
+  ');@output_buffer.append= ( label_tag(:q, "MRSS Sample:") );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  ');@output_buffer.append= ( text_field_tag(:mrss_url,"mrss.xml") );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  ');@output_buffer.append= ( submit_tag("Search") );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  </div>
+'); end 
+@output_buffer.safe_concat('
+
+<br/> <br/>
+<br/> <br/>
+');@output_buffer.append=  form_tag(:controller => "home", :action => "mrss_media") do @output_buffer.safe_concat('
+');@output_buffer.safe_concat('  <div class="field">
+  ');@output_buffer.append= ( label_tag(:q, "MRSS Sample with multile media content:") );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  ');@output_buffer.append= ( text_field_tag(:mrss_media_url,"mrss_media.xml") );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  ');@output_buffer.append= ( submit_tag("Search") );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  </div>
+'); end 
+@output_buffer.safe_concat('
+
+<br/> <br/>
+<br/> <br/>
+');@output_buffer.append=  form_tag(:controller => "home", :action => "divx") do @output_buffer.safe_concat('
+');@output_buffer.safe_concat('  <div class="field">
+  ');@output_buffer.append= ( label_tag(:q, "DIVX Sample:") );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  ');@output_buffer.append= ( text_field_tag(:divx_url,"divx.xml") );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  ');@output_buffer.append= ( submit_tag("Search") );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  </div>
+'); end 
+@output_buffer.safe_concat('
+
+
+
+
+
+
+');@output_buffer.to_s
+          ensure
+            @_virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: /home/jyothi/projects/rss/app/views/home/index.html.erb:70:in `compile'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_view/template.rb:134:in `render'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-3.0.9/lib/active_support/notifications.rb:54:in `instrument'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_view/template.rb:127:in `render'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_view/render/rendering.rb:59:in `_render_template'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-3.0.9/lib/active_support/notifications.rb:52:in `instrument'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-3.0.9/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-3.0.9/lib/active_support/notifications.rb:52:in `instrument'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_view/render/rendering.rb:56:in `_render_template'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_view/render/rendering.rb:26:in `render'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/abstract_controller/rendering.rb:115:in `_render_template'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/abstract_controller/rendering.rb:109:in `render_to_body'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_controller/metal/renderers.rb:47:in `render_to_body'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_controller/metal/compatibility.rb:55:in `render_to_body'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/abstract_controller/rendering.rb:102:in `render_to_string'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/abstract_controller/rendering.rb:93:in `render'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_controller/metal/rendering.rb:17:in `render'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-3.0.9/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/home/jyothi/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-3.0.9/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activerecord-3.0.9/lib/active_record/railties/controller_runtime.rb:15:in `cleanup_view_runtime'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/abstract_controller/base.rb:150:in `process_action'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_controller/metal/rendering.rb:11:in `process_action'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/abstract_controller/callbacks.rb:18:in `process_action'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-3.0.9/lib/active_support/callbacks.rb:436:in `_run__738958071__process_action__199225275__callbacks'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-3.0.9/lib/active_support/callbacks.rb:410:in `send'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-3.0.9/lib/active_support/callbacks.rb:410:in `_run_process_action_callbacks'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-3.0.9/lib/active_support/callbacks.rb:94:in `send'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-3.0.9/lib/active_support/callbacks.rb:94:in `run_callbacks'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-3.0.9/lib/active_support/notifications.rb:52:in `instrument'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-3.0.9/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-3.0.9/lib/active_support/notifications.rb:52:in `instrument'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_controller/metal/rescue.rb:17:in `process_action'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/abstract_controller/base.rb:119:in `process'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/abstract_controller/rendering.rb:41:in `process'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_controller/metal.rb:138:in `dispatch'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_controller/metal.rb:178:in `action'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/routing/route_set.rb:62:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/routing/route_set.rb:62:in `dispatch'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/routing/route_set.rb:27:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/rack-mount-0.6.14/lib/rack/mount/route_set.rb:148:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:93:in `recognize'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:68:in `optimized_each'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:92:in `recognize'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/rack-mount-0.6.14/lib/rack/mount/route_set.rb:139:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/routing/route_set.rb:493:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/head.rb:14:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.2.3/lib/rack/methodoverride.rb:24:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/flash.rb:182:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/cookies.rb:302:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activerecord-3.0.9/lib/active_record/query_cache.rb:32:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activerecord-3.0.9/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activerecord-3.0.9/lib/active_record/query_cache.rb:12:in `cache'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activerecord-3.0.9/lib/active_record/query_cache.rb:31:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activerecord-3.0.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:354:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/callbacks.rb:46:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-3.0.9/lib/active_support/callbacks.rb:416:in `_run_call_callbacks'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.2.3/lib/rack/sendfile.rb:107:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/show_exceptions.rb:47:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/railties-3.0.9/lib/rails/rack/logger.rb:13:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.2.3/lib/rack/runtime.rb:17:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-3.0.9/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.2.3/lib/rack/lock.rb:11:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.2.3/lib/rack/lock.rb:11:in `synchronize'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.2.3/lib/rack/lock.rb:11:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/static.rb:30:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/railties-3.0.9/lib/rails/application.rb:168:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/railties-3.0.9/lib/rails/application.rb:77:in `send'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/railties-3.0.9/lib/rails/application.rb:77:in `method_missing'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/railties-3.0.9/lib/rails/rack/log_tailer.rb:14:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.2.3/lib/rack/content_length.rb:13:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.2.3/lib/rack/handler/webrick.rb:52:in `service'
+/home/jyothi/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/home/jyothi/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/home/jyothi/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/home/jyothi/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/home/jyothi/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/home/jyothi/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/home/jyothi/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/home/jyothi/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/home/jyothi/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/home/jyothi/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.2.3/lib/rack/handler/webrick.rb:13:in `run'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.2.3/lib/rack/server.rb:217:in `start'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/railties-3.0.9/lib/rails/commands/server.rb:65:in `start'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/railties-3.0.9/lib/rails/commands.rb:30
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/railties-3.0.9/lib/rails/commands.rb:27:in `tap'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/railties-3.0.9/lib/rails/commands.rb:27
+script/rails:6:in `require'
+script/rails:6
+Rendered home/index.html.erb within layouts/application (4.7ms)
+Completed 500 Internal Server Error in 16ms
+
+ActionView::Template::Error (compile error
+/home/jyothi/projects/rss/app/views/home/index.html.erb:12: syntax error, unexpected kEND, expecting ')'
+'); end 
+       ^
+/home/jyothi/projects/rss/app/views/home/index.html.erb:68: syntax error, unexpected kENSURE, expecting ')'
+/home/jyothi/projects/rss/app/views/home/index.html.erb:70: syntax error, unexpected kEND, expecting ')'):
+    9:   <%= text_field_tag(:live_url,"http://share.onescreen.co/npatel/itunes.xml") %>
+    10:   <%= submit_tag("Search") %>
+    11:   </div>
+    12: <% end %>
+    13: 
+    14: 
+    15: 
+  app/views/home/index.html.erb:70:in `compile'
+
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.7ms)
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (9.4ms)
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (24.2ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Aug 10 23:45:22 +0530 2011
+  Processing by HomeController#index as HTML
+ERROR: compiling _app_views_home_index_html_erb__315390625__614221468_0 RAISED compile error
+/home/jyothi/projects/rss/app/views/home/index.html.erb:12: syntax error, unexpected kEND, expecting ')'
+'); end 
+       ^
+/home/jyothi/projects/rss/app/views/home/index.html.erb:68: syntax error, unexpected kENSURE, expecting ')'
+/home/jyothi/projects/rss/app/views/home/index.html.erb:70: syntax error, unexpected kEND, expecting ')'
+Function body:           def _app_views_home_index_html_erb__315390625__614221468_0(local_assigns)
+            _old_virtual_path, @_virtual_path = @_virtual_path, "home/index";_old_output_buffer = @output_buffer;;@output_buffer = ActionView::OutputBuffer.new;@output_buffer.safe_concat('<h1>RSS Feed Reader</h1>
+
+
+<br/> <br/>
+<br/> <br/>
+');@output_buffer.append=  form_tag(:controller => "home", :action => "live_sample") do @output_buffer.safe_concat('
+');@output_buffer.safe_concat('  <div class="field">
+  ');@output_buffer.append= ( label_tag(:q, "Enter the any LiveURL Itunes/MRSS/Divx" );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  ');@output_buffer.append= ( text_field_tag(:live_url,"http://share.onescreen.co/npatel/itunes.xml") );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  ');@output_buffer.append= ( submit_tag("Search") );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  </div>
+'); end 
+@output_buffer.safe_concat('
+
+
+<br/> <br/>
+<br/> <br/>
+
+
+');@output_buffer.append=  form_tag(:controller => "home", :action => "itunes") do @output_buffer.safe_concat('
+');@output_buffer.safe_concat('  <div class="field">
+  ');@output_buffer.append= ( label_tag(:q, "ITUNES Sample:") );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  ');@output_buffer.append= ( text_field_tag(:itunes_url,"itunes.xml") );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  ');@output_buffer.append= ( submit_tag("Search") );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  </div>
+'); end 
+@output_buffer.safe_concat('
+
+<br/> <br/>
+<br/> <br/>
+');@output_buffer.append=  form_tag(:controller => "home", :action => "mrss") do @output_buffer.safe_concat('
+');@output_buffer.safe_concat('  <div class="field">
+  ');@output_buffer.append= ( label_tag(:q, "MRSS Sample:") );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  ');@output_buffer.append= ( text_field_tag(:mrss_url,"mrss.xml") );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  ');@output_buffer.append= ( submit_tag("Search") );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  </div>
+'); end 
+@output_buffer.safe_concat('
+
+<br/> <br/>
+<br/> <br/>
+');@output_buffer.append=  form_tag(:controller => "home", :action => "mrss_media") do @output_buffer.safe_concat('
+');@output_buffer.safe_concat('  <div class="field">
+  ');@output_buffer.append= ( label_tag(:q, "MRSS Sample with multile media content:") );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  ');@output_buffer.append= ( text_field_tag(:mrss_media_url,"mrss_media.xml") );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  ');@output_buffer.append= ( submit_tag("Search") );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  </div>
+'); end 
+@output_buffer.safe_concat('
+
+<br/> <br/>
+<br/> <br/>
+');@output_buffer.append=  form_tag(:controller => "home", :action => "divx") do @output_buffer.safe_concat('
+');@output_buffer.safe_concat('  <div class="field">
+  ');@output_buffer.append= ( label_tag(:q, "DIVX Sample:") );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  ');@output_buffer.append= ( text_field_tag(:divx_url,"divx.xml") );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  ');@output_buffer.append= ( submit_tag("Search") );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  </div>
+'); end 
+@output_buffer.safe_concat('
+
+
+
+
+
+
+');@output_buffer.to_s
+          ensure
+            @_virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: /home/jyothi/projects/rss/app/views/home/index.html.erb:70:in `compile'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_view/template.rb:134:in `render'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-3.0.9/lib/active_support/notifications.rb:54:in `instrument'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_view/template.rb:127:in `render'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_view/render/rendering.rb:59:in `_render_template'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-3.0.9/lib/active_support/notifications.rb:52:in `instrument'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-3.0.9/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-3.0.9/lib/active_support/notifications.rb:52:in `instrument'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_view/render/rendering.rb:56:in `_render_template'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_view/render/rendering.rb:26:in `render'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/abstract_controller/rendering.rb:115:in `_render_template'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/abstract_controller/rendering.rb:109:in `render_to_body'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_controller/metal/renderers.rb:47:in `render_to_body'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_controller/metal/compatibility.rb:55:in `render_to_body'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/abstract_controller/rendering.rb:102:in `render_to_string'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/abstract_controller/rendering.rb:93:in `render'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_controller/metal/rendering.rb:17:in `render'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-3.0.9/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/home/jyothi/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-3.0.9/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activerecord-3.0.9/lib/active_record/railties/controller_runtime.rb:15:in `cleanup_view_runtime'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/abstract_controller/base.rb:150:in `process_action'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_controller/metal/rendering.rb:11:in `process_action'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/abstract_controller/callbacks.rb:18:in `process_action'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-3.0.9/lib/active_support/callbacks.rb:436:in `_run__738958071__process_action__199225275__callbacks'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-3.0.9/lib/active_support/callbacks.rb:410:in `send'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-3.0.9/lib/active_support/callbacks.rb:410:in `_run_process_action_callbacks'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-3.0.9/lib/active_support/callbacks.rb:94:in `send'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-3.0.9/lib/active_support/callbacks.rb:94:in `run_callbacks'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-3.0.9/lib/active_support/notifications.rb:52:in `instrument'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-3.0.9/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-3.0.9/lib/active_support/notifications.rb:52:in `instrument'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_controller/metal/rescue.rb:17:in `process_action'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/abstract_controller/base.rb:119:in `process'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/abstract_controller/rendering.rb:41:in `process'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_controller/metal.rb:138:in `dispatch'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_controller/metal.rb:178:in `action'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/routing/route_set.rb:62:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/routing/route_set.rb:62:in `dispatch'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/routing/route_set.rb:27:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/rack-mount-0.6.14/lib/rack/mount/route_set.rb:148:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:93:in `recognize'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:68:in `optimized_each'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:92:in `recognize'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/rack-mount-0.6.14/lib/rack/mount/route_set.rb:139:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/routing/route_set.rb:493:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/head.rb:14:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.2.3/lib/rack/methodoverride.rb:24:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/flash.rb:182:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/cookies.rb:302:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activerecord-3.0.9/lib/active_record/query_cache.rb:32:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activerecord-3.0.9/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activerecord-3.0.9/lib/active_record/query_cache.rb:12:in `cache'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activerecord-3.0.9/lib/active_record/query_cache.rb:31:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activerecord-3.0.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:354:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/callbacks.rb:46:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-3.0.9/lib/active_support/callbacks.rb:416:in `_run_call_callbacks'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.2.3/lib/rack/sendfile.rb:107:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/show_exceptions.rb:47:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/railties-3.0.9/lib/rails/rack/logger.rb:13:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.2.3/lib/rack/runtime.rb:17:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-3.0.9/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.2.3/lib/rack/lock.rb:11:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.2.3/lib/rack/lock.rb:11:in `synchronize'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.2.3/lib/rack/lock.rb:11:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/static.rb:30:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/railties-3.0.9/lib/rails/application.rb:168:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/railties-3.0.9/lib/rails/application.rb:77:in `send'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/railties-3.0.9/lib/rails/application.rb:77:in `method_missing'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/railties-3.0.9/lib/rails/rack/log_tailer.rb:14:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.2.3/lib/rack/content_length.rb:13:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.2.3/lib/rack/handler/webrick.rb:52:in `service'
+/home/jyothi/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/home/jyothi/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/home/jyothi/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/home/jyothi/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/home/jyothi/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/home/jyothi/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/home/jyothi/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/home/jyothi/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/home/jyothi/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/home/jyothi/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.2.3/lib/rack/handler/webrick.rb:13:in `run'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.2.3/lib/rack/server.rb:217:in `start'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/railties-3.0.9/lib/rails/commands/server.rb:65:in `start'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/railties-3.0.9/lib/rails/commands.rb:30
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/railties-3.0.9/lib/rails/commands.rb:27:in `tap'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/railties-3.0.9/lib/rails/commands.rb:27
+script/rails:6:in `require'
+script/rails:6
+Rendered home/index.html.erb within layouts/application (4.5ms)
+Completed 500 Internal Server Error in 16ms
+
+ActionView::Template::Error (compile error
+/home/jyothi/projects/rss/app/views/home/index.html.erb:12: syntax error, unexpected kEND, expecting ')'
+'); end 
+       ^
+/home/jyothi/projects/rss/app/views/home/index.html.erb:68: syntax error, unexpected kENSURE, expecting ')'
+/home/jyothi/projects/rss/app/views/home/index.html.erb:70: syntax error, unexpected kEND, expecting ')'):
+    9:   <%= text_field_tag(:live_url,"http://share.onescreen.co/npatel/itunes.xml") %>
+    10:   <%= submit_tag("Search") %>
+    11:   </div>
+    12: <% end %>
+    13: 
+    14: 
+    15: 
+  app/views/home/index.html.erb:70:in `compile'
+
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.6ms)
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (14.4ms)
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (29.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Aug 10 23:45:39 +0530 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (18.2ms)
+Completed 200 OK in 30ms (Views: 29.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/home/itunes" for 127.0.0.1 at Wed Aug 10 23:47:24 +0530 2011
+  Processing by HomeController#itunes as HTML
+  Parameters: {"commit"=>"Search", "itunes_url"=>"itunes.xml", "authenticity_token"=>"n5TsyEQMQwoTA2osDtkKFbP8l51g5flaz8k+XZURmZc=", "utf8"=>"✓"}
+Completed 500 Internal Server Error in 2ms
+
+RuntimeError (Unable to read the file: can't convert nil into String):
+  app/controllers/home_controller.rb:40:in `itunes'
+
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.7ms)
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (19.9ms)
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (34.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Aug 10 23:47:39 +0530 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (17.8ms)
+Completed 200 OK in 30ms (Views: 28.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/home/itunes" for 127.0.0.1 at Wed Aug 10 23:47:41 +0530 2011
+  Processing by HomeController#itunes as HTML
+  Parameters: {"commit"=>"Search", "itunes_url"=>"http://www.vodcars.com/fastlanedaily/rss", "authenticity_token"=>"n5TsyEQMQwoTA2osDtkKFbP8l51g5flaz8k+XZURmZc=", "utf8"=>"✓"}
+Completed 500 Internal Server Error in 2ms
+
+RuntimeError (Unable to read the file: can't convert nil into String):
+  app/controllers/home_controller.rb:40:in `itunes'
+
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.6ms)
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (11.7ms)
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (26.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Aug 10 23:47:46 +0530 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 12ms (Views: 11.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/home/itunes" for 127.0.0.1 at Wed Aug 10 23:47:47 +0530 2011
+  Processing by HomeController#itunes as HTML
+  Parameters: {"commit"=>"Search", "itunes_url"=>"http://www.vodcars.com/fastlanedaily/rss", "authenticity_token"=>"n5TsyEQMQwoTA2osDtkKFbP8l51g5flaz8k+XZURmZc=", "utf8"=>"✓"}
+Completed 500 Internal Server Error in 2ms
+
+RuntimeError (Unable to read the file: can't convert nil into String):
+  app/controllers/home_controller.rb:40:in `itunes'
+
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.5ms)
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (22.8ms)
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (37.0ms)
+
+
+Started POST "/home/itunes" for 127.0.0.1 at Wed Aug 10 23:48:29 +0530 2011
+  Processing by HomeController#itunes as HTML
+  Parameters: {"commit"=>"Search", "itunes_url"=>"http://www.vodcars.com/fastlanedaily/rss", "authenticity_token"=>"n5TsyEQMQwoTA2osDtkKFbP8l51g5flaz8k+XZURmZc=", "utf8"=>"✓"}
+Completed 500 Internal Server Error in 1ms
+
+RuntimeError (Unable to read the file: can't convert nil into String):
+  app/controllers/home_controller.rb:40:in `itunes'
+
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (83.6ms)
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (89.4ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Aug 10 23:48:40 +0530 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (20.2ms)
+Completed 200 OK in 33ms (Views: 32.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Aug 10 23:48:44 +0530 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (17.5ms)
+Completed 200 OK in 30ms (Views: 28.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/home/itunes" for 127.0.0.1 at Wed Aug 10 23:48:45 +0530 2011
+  Processing by HomeController#itunes as HTML
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"n5TsyEQMQwoTA2osDtkKFbP8l51g5flaz8k+XZURmZc=", "utf8"=>"✓", "live_url"=>"http://www.vodcars.com/fastlanedaily/rss"}
+Rendered home/itunes.html.erb within layouts/application (269.7ms)
+Completed 200 OK in 8524ms (Views: 283.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Aug 10 23:49:13 +0530 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (18.1ms)
+Completed 200 OK in 32ms (Views: 30.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/home/itunes" for 127.0.0.1 at Wed Aug 10 23:49:16 +0530 2011
+  Processing by HomeController#itunes as HTML
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"n5TsyEQMQwoTA2osDtkKFbP8l51g5flaz8k+XZURmZc=", "utf8"=>"✓", "live_url"=>"http://share.onescreen.co/npatel/itunes.xml"}
+Rendered home/itunes.html.erb within layouts/application (3.5ms)
+Completed 500 Internal Server Error in 1601ms
+
+ActionView::Template::Error (can't convert String into Integer):
+    10: <h3>Items <br></h3>
+    11: 
+    12: <% @data["channel"]["item"].each do |data|  %>
+    13:     Title: <%= data["title"] %> <br/>
+    14:     GUID: <%= data["guid"] %> <br/>
+    15:     URL: <%= data["enclosure"]["url"] %> <br/>
+    16:     Subtitle <%= data["subtitle"] %> <br/>
+  app/views/home/itunes.html.erb:13:in `[]'
+  app/views/home/itunes.html.erb:13:in `_app_views_home_itunes_html_erb___249544080__612735258_0'
+  app/views/home/itunes.html.erb:12:in `each'
+  app/views/home/itunes.html.erb:12:in `_app_views_home_itunes_html_erb___249544080__612735258_0'
+
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.9ms)
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (18.7ms)
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (34.9ms)
+
+
+Started POST "/home/itunes" for 127.0.0.1 at Wed Aug 10 23:49:51 +0530 2011
+  Processing by HomeController#itunes as HTML
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"n5TsyEQMQwoTA2osDtkKFbP8l51g5flaz8k+XZURmZc=", "utf8"=>"✓", "live_url"=>"http://share.onescreen.co/npatel/itunes.xml"}
+Rendered home/itunes.html.erb within layouts/application (2.7ms)
+Completed 500 Internal Server Error in 1343ms
+
+ActionView::Template::Error (can't convert String into Integer):
+    10: <h3>Items <br></h3>
+    11: 
+    12: <% @data["channel"]["item"].each do |data|  %>
+    13:     Title: <%= data["title"] %> <br/>
+    14:     GUID: <%= data["guid"] %> <br/>
+    15:     URL: <%= data["enclosure"]["url"] %> <br/>
+    16:     Subtitle <%= data["subtitle"] %> <br/>
+  app/views/home/itunes.html.erb:13:in `[]'
+  app/views/home/itunes.html.erb:13:in `_app_views_home_itunes_html_erb___249544080__613448888_0'
+  app/views/home/itunes.html.erb:12:in `each'
+  app/views/home/itunes.html.erb:12:in `_app_views_home_itunes_html_erb___249544080__613448888_0'
+
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.7ms)
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (25.0ms)
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (40.4ms)
+
+
+Started POST "/home/itunes" for 127.0.0.1 at Wed Aug 10 23:51:13 +0530 2011
+  Processing by HomeController#itunes as HTML
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"n5TsyEQMQwoTA2osDtkKFbP8l51g5flaz8k+XZURmZc=", "utf8"=>"✓", "live_url"=>"http://share.onescreen.co/npatel/itunes.xml"}
+Rendered home/itunes.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 1357ms (Views: 22.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/home/itunes" for 127.0.0.1 at Wed Aug 10 23:51:51 +0530 2011
+  Processing by HomeController#itunes as HTML
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"n5TsyEQMQwoTA2osDtkKFbP8l51g5flaz8k+XZURmZc=", "utf8"=>"✓", "live_url"=>"http://share.onescreen.co/npatel/itunes.xml"}
+Rendered home/itunes.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 1659ms (Views: 23.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/home/itunes" for 127.0.0.1 at Wed Aug 10 23:52:07 +0530 2011
+  Processing by HomeController#itunes as HTML
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"n5TsyEQMQwoTA2osDtkKFbP8l51g5flaz8k+XZURmZc=", "utf8"=>"✓", "live_url"=>"http://share.onescreen.co/npatel/itunes.xml"}
+Rendered home/itunes.html.erb within layouts/application (12.6ms)
+Completed 200 OK in 1425ms (Views: 24.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/home/itunes" for 127.0.0.1 at Wed Aug 10 23:52:27 +0530 2011
+  Processing by HomeController#itunes as HTML
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"n5TsyEQMQwoTA2osDtkKFbP8l51g5flaz8k+XZURmZc=", "utf8"=>"✓", "live_url"=>"http://share.onescreen.co/npatel/itunes.xml"}
+Completed 500 Internal Server Error in 36894ms
+
+RuntimeError (Unable to read the file: #<REXML::ParseException: Missing end tag for 'td' (got "body")
+Line: 128
+Position: 8985
+Last 80 unconsumed characters:
+>
+/home/jyothi/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/rexml/parsers/baseparser.rb:330:in `pull'
+/home/jyothi/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/rexml/parsers/treeparser.rb:22:in `parse'
+/home/jyothi/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/rexml/document.rb:227:in `build'
+/home/jyothi/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/rexml/document.rb:43:in `initialize'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-3.0.9/lib/active_support/xml_mini/rexml.rb:29:in `new'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-3.0.9/lib/active_support/xml_mini/rexml.rb:29:in `parse'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-3.0.9/lib/active_support/xml_mini.rb:78:in `__send__'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-3.0.9/lib/active_support/xml_mini.rb:78:in `parse'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-3.0.9/lib/active_support/core_ext/hash/conversions.rb:78:in `from_xml'
+/home/jyothi/projects/rss/app/controllers/home_controller.rb:37:in `itunes'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/abstract_controller/base.rb:150:in `process_action'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_controller/metal/rendering.rb:11:in `process_action'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/abstract_controller/callbacks.rb:18:in `process_action'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-3.0.9/lib/active_support/callbacks.rb:436:in `_run__738958071__process_action__599262692__callbacks'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-3.0.9/lib/active_support/callbacks.rb:410:in `send'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-3.0.9/lib/active_support/callbacks.rb:410:in `_run_process_action_callbacks'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-3.0.9/lib/active_support/callbacks.rb:94:in `send'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-3.0.9/lib/active_support/callbacks.rb:94:in `run_callbacks'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-3.0.9/lib/active_support/notifications.rb:52:in `instrument'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-3.0.9/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-3.0.9/lib/active_support/notifications.rb:52:in `instrument'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_controller/metal/rescue.rb:17:in `process_action'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/abstract_controller/base.rb:119:in `process'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/abstract_controller/rendering.rb:41:in `process'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_controller/metal.rb:138:in `dispatch'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_controller/metal.rb:178:in `action'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/routing/route_set.rb:62:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/routing/route_set.rb:62:in `dispatch'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/routing/route_set.rb:27:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/rack-mount-0.6.14/lib/rack/mount/route_set.rb:148:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:93:in `recognize'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:68:in `optimized_each'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:92:in `recognize'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/rack-mount-0.6.14/lib/rack/mount/route_set.rb:139:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/routing/route_set.rb:493:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/head.rb:14:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.2.3/lib/rack/methodoverride.rb:24:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/flash.rb:182:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/cookies.rb:302:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activerecord-3.0.9/lib/active_record/query_cache.rb:32:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activerecord-3.0.9/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activerecord-3.0.9/lib/active_record/query_cache.rb:12:in `cache'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activerecord-3.0.9/lib/active_record/query_cache.rb:31:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activerecord-3.0.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:354:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/callbacks.rb:46:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-3.0.9/lib/active_support/callbacks.rb:416:in `_run_call_callbacks'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.2.3/lib/rack/sendfile.rb:107:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/show_exceptions.rb:47:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/railties-3.0.9/lib/rails/rack/logger.rb:13:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.2.3/lib/rack/runtime.rb:17:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-3.0.9/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.2.3/lib/rack/lock.rb:11:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.2.3/lib/rack/lock.rb:11:in `synchronize'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.2.3/lib/rack/lock.rb:11:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/static.rb:30:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/railties-3.0.9/lib/rails/application.rb:168:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/railties-3.0.9/lib/rails/application.rb:77:in `send'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/railties-3.0.9/lib/rails/application.rb:77:in `method_missing'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/railties-3.0.9/lib/rails/rack/log_tailer.rb:14:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.2.3/lib/rack/content_length.rb:13:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.2.3/lib/rack/handler/webrick.rb:52:in `service'
+/home/jyothi/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/home/jyothi/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/home/jyothi/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/home/jyothi/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/home/jyothi/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/home/jyothi/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/home/jyothi/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/home/jyothi/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/home/jyothi/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/home/jyothi/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.2.3/lib/rack/handler/webrick.rb:13:in `run'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.2.3/lib/rack/server.rb:217:in `start'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/railties-3.0.9/lib/rails/commands/server.rb:65:in `start'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/railties-3.0.9/lib/rails/commands.rb:30
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/railties-3.0.9/lib/rails/commands.rb:27:in `tap'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/railties-3.0.9/lib/rails/commands.rb:27
+script/rails:6:in `require'
+script/rails:6
+...
+Missing end tag for 'td' (got "body")
+Line: 128
+Position: 8985
+Last 80 unconsumed characters:
+
+Line: 128
+Position: 8985
+Last 80 unconsumed characters:
+):
+  app/controllers/home_controller.rb:40:in `itunes'
+
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (8.1ms)
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Aug 10 23:53:46 +0530 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (17.5ms)
+Completed 200 OK in 30ms (Views: 29.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/home/itunes" for 127.0.0.1 at Wed Aug 10 23:53:48 +0530 2011
+  Processing by HomeController#itunes as HTML
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"n5TsyEQMQwoTA2osDtkKFbP8l51g5flaz8k+XZURmZc=", "utf8"=>"✓", "live_url"=>"http://www.vodcars.com/fastlanedaily/rss"}
+Rendered home/itunes.html.erb within layouts/application (262.5ms)
+Completed 200 OK in 6698ms (Views: 304.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/home/itunes" for 127.0.0.1 at Wed Aug 10 23:54:14 +0530 2011
+  Processing by HomeController#itunes as HTML
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"n5TsyEQMQwoTA2osDtkKFbP8l51g5flaz8k+XZURmZc=", "utf8"=>"✓", "live_url"=>"http://share.onescreen.co/npatel/itunes.xml"}
+Rendered home/itunes.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 909ms (Views: 23.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Aug 10 23:58:04 +0530 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (17.8ms)
+Completed 200 OK in 30ms (Views: 28.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/home/mrss" for 127.0.0.1 at Wed Aug 10 23:58:16 +0530 2011
+  Processing by HomeController#mrss as HTML
+  Parameters: {"commit"=>"Search", "mrss_url"=>"http://playlists.1sfx.net/1202220/os/2299610.xml", "authenticity_token"=>"n5TsyEQMQwoTA2osDtkKFbP8l51g5flaz8k+XZURmZc=", "utf8"=>"✓"}
+Completed 500 Internal Server Error in 2ms
+
+RuntimeError (Unable to read the file: No such file or directory - http://playlists.1sfx.net/1202220/os/2299610.xml):
+  app/controllers/home_controller.rb:15:in `mrss'
+
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.6ms)
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (20.6ms)
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (36.0ms)
+
+
+Started POST "/home/mrss" for 127.0.0.1 at Wed Aug 10 23:58:53 +0530 2011
+  Processing by HomeController#mrss as HTML
+  Parameters: {"commit"=>"Search", "mrss_url"=>"http://playlists.1sfx.net/1202220/os/2299610.xml", "authenticity_token"=>"n5TsyEQMQwoTA2osDtkKFbP8l51g5flaz8k+XZURmZc=", "utf8"=>"✓"}
+Completed 500 Internal Server Error in 2ms
+
+RuntimeError (Unable to read the file: No such file or directory - http://playlists.1sfx.net/1202220/os/2299610.xml):
+  app/controllers/home_controller.rb:15:in `mrss'
+
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.7ms)
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (8.3ms)
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (25.6ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Aug 10 23:58:55 +0530 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (17.7ms)
+Completed 200 OK in 30ms (Views: 28.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/home/mrss" for 127.0.0.1 at Wed Aug 10 23:58:58 +0530 2011
+  Processing by HomeController#mrss as HTML
+  Parameters: {"commit"=>"Search", "mrss_url"=>"http://playlists.1sfx.net/1202220/os/2299610.xml", "authenticity_token"=>"n5TsyEQMQwoTA2osDtkKFbP8l51g5flaz8k+XZURmZc=", "utf8"=>"✓"}
+Completed 500 Internal Server Error in 2ms
+
+RuntimeError (Unable to read the file: No such file or directory - http://playlists.1sfx.net/1202220/os/2299610.xml):
+  app/controllers/home_controller.rb:15:in `mrss'
+
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.6ms)
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (21.1ms)
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (36.7ms)
+
+
+Started POST "/home/mrss_media" for 127.0.0.1 at Wed Aug 10 23:59:09 +0530 2011
+  Processing by HomeController#mrss_media as HTML
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"n5TsyEQMQwoTA2osDtkKFbP8l51g5flaz8k+XZURmZc=", "utf8"=>"✓", "live_url"=>"http://playlists.1sfx.net/1202220/os/2299610.xml"}
+Completed 500 Internal Server Error in 7817ms
+
+RuntimeError (Unable to read the file: #<REXML::ParseException: Missing end tag for 'td' (got "body")
+Line: 128
+Position: 8985
+Last 80 unconsumed characters:
+>
+/home/jyothi/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/rexml/parsers/baseparser.rb:330:in `pull'
+/home/jyothi/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/rexml/parsers/treeparser.rb:22:in `parse'
+/home/jyothi/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/rexml/document.rb:227:in `build'
+/home/jyothi/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/rexml/document.rb:43:in `initialize'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-3.0.9/lib/active_support/xml_mini/rexml.rb:29:in `new'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-3.0.9/lib/active_support/xml_mini/rexml.rb:29:in `parse'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-3.0.9/lib/active_support/xml_mini.rb:78:in `__send__'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-3.0.9/lib/active_support/xml_mini.rb:78:in `parse'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-3.0.9/lib/active_support/core_ext/hash/conversions.rb:78:in `from_xml'
+/home/jyothi/projects/rss/app/controllers/home_controller.rb:26:in `mrss_media'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/abstract_controller/base.rb:150:in `process_action'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_controller/metal/rendering.rb:11:in `process_action'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/abstract_controller/callbacks.rb:18:in `process_action'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-3.0.9/lib/active_support/callbacks.rb:436:in `_run__738958071__process_action__704386728__callbacks'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-3.0.9/lib/active_support/callbacks.rb:410:in `send'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-3.0.9/lib/active_support/callbacks.rb:410:in `_run_process_action_callbacks'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-3.0.9/lib/active_support/callbacks.rb:94:in `send'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-3.0.9/lib/active_support/callbacks.rb:94:in `run_callbacks'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-3.0.9/lib/active_support/notifications.rb:52:in `instrument'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-3.0.9/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-3.0.9/lib/active_support/notifications.rb:52:in `instrument'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_controller/metal/rescue.rb:17:in `process_action'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/abstract_controller/base.rb:119:in `process'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/abstract_controller/rendering.rb:41:in `process'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_controller/metal.rb:138:in `dispatch'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_controller/metal.rb:178:in `action'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/routing/route_set.rb:62:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/routing/route_set.rb:62:in `dispatch'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/routing/route_set.rb:27:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/rack-mount-0.6.14/lib/rack/mount/route_set.rb:148:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:93:in `recognize'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:68:in `optimized_each'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:92:in `recognize'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/rack-mount-0.6.14/lib/rack/mount/route_set.rb:139:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/routing/route_set.rb:493:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/head.rb:14:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.2.3/lib/rack/methodoverride.rb:24:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/flash.rb:182:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/cookies.rb:302:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activerecord-3.0.9/lib/active_record/query_cache.rb:32:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activerecord-3.0.9/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activerecord-3.0.9/lib/active_record/query_cache.rb:12:in `cache'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activerecord-3.0.9/lib/active_record/query_cache.rb:31:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activerecord-3.0.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:354:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/callbacks.rb:46:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-3.0.9/lib/active_support/callbacks.rb:416:in `_run_call_callbacks'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.2.3/lib/rack/sendfile.rb:107:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/show_exceptions.rb:47:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/railties-3.0.9/lib/rails/rack/logger.rb:13:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.2.3/lib/rack/runtime.rb:17:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-3.0.9/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.2.3/lib/rack/lock.rb:11:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.2.3/lib/rack/lock.rb:11:in `synchronize'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.2.3/lib/rack/lock.rb:11:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/static.rb:30:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/railties-3.0.9/lib/rails/application.rb:168:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/railties-3.0.9/lib/rails/application.rb:77:in `send'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/railties-3.0.9/lib/rails/application.rb:77:in `method_missing'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/railties-3.0.9/lib/rails/rack/log_tailer.rb:14:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.2.3/lib/rack/content_length.rb:13:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.2.3/lib/rack/handler/webrick.rb:52:in `service'
+/home/jyothi/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/home/jyothi/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/home/jyothi/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/home/jyothi/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/home/jyothi/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/home/jyothi/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/home/jyothi/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/home/jyothi/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/home/jyothi/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/home/jyothi/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.2.3/lib/rack/handler/webrick.rb:13:in `run'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.2.3/lib/rack/server.rb:217:in `start'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/railties-3.0.9/lib/rails/commands/server.rb:65:in `start'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/railties-3.0.9/lib/rails/commands.rb:30
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/railties-3.0.9/lib/rails/commands.rb:27:in `tap'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/railties-3.0.9/lib/rails/commands.rb:27
+script/rails:6:in `require'
+script/rails:6
+...
+Missing end tag for 'td' (got "body")
+Line: 128
+Position: 8985
+Last 80 unconsumed characters:
+
+Line: 128
+Position: 8985
+Last 80 unconsumed characters:
+):
+  app/controllers/home_controller.rb:29:in `mrss_media'
+
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.0ms)
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (20.0ms)
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (35.3ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Aug 11 00:00:30 +0530 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (17.3ms)
+Completed 200 OK in 30ms (Views: 28.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/home/mrss" for 127.0.0.1 at Thu Aug 11 00:00:33 +0530 2011
+  Processing by HomeController#mrss as HTML
+  Parameters: {"commit"=>"Search", "mrss_url"=>"http://items.1sfx.net/1202220/os/4881083.xml", "authenticity_token"=>"n5TsyEQMQwoTA2osDtkKFbP8l51g5flaz8k+XZURmZc=", "utf8"=>"✓"}
+Completed 500 Internal Server Error in 2ms
+
+RuntimeError (Unable to read the file: No such file or directory - http://items.1sfx.net/1202220/os/4881083.xml):
+  app/controllers/home_controller.rb:15:in `mrss'
+
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (7.0ms)
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (7.6ms)
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (22.2ms)
+
+
+Started POST "/home/mrss_media" for 127.0.0.1 at Thu Aug 11 00:00:41 +0530 2011
+  Processing by HomeController#mrss_media as HTML
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"n5TsyEQMQwoTA2osDtkKFbP8l51g5flaz8k+XZURmZc=", "utf8"=>"✓", "live_url"=>"http://items.1sfx.net/1202220/os/4881083.xml"}
+Completed 500 Internal Server Error in 36408ms
+
+RuntimeError (Unable to read the file: Network is unreachable - connect(2)):
+  app/controllers/home_controller.rb:29:in `mrss_media'
+
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.7ms)
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (20.9ms)
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (36.3ms)
+
+
+Started POST "/home/mrss_media" for 127.0.0.1 at Thu Aug 11 00:04:15 +0530 2011
+  Processing by HomeController#mrss_media as HTML
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"n5TsyEQMQwoTA2osDtkKFbP8l51g5flaz8k+XZURmZc=", "utf8"=>"✓", "live_url"=>"http://items.1sfx.net/1202220/os/4881083.xml"}
+Completed 500 Internal Server Error in 40034ms
+
+RuntimeError (Unable to read the file: getaddrinfo: Name or service not known):
+  app/controllers/home_controller.rb:29:in `mrss_media'
+
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (10.0ms)
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (25.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Aug 11 00:04:55 +0530 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 15ms (Views: 14.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Aug 11 00:05:52 +0530 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (15.8ms)
+Completed 200 OK in 28ms (Views: 26.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Aug 11 00:07:02 +0530 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 27ms (Views: 26.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Aug 11 00:07:16 +0530 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (15.4ms)
+Completed 200 OK in 27ms (Views: 26.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Aug 11 00:07:51 +0530 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (16.8ms)
+Completed 200 OK in 30ms (Views: 28.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Aug 11 00:08:00 +0530 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/home/divx" for 127.0.0.1 at Thu Aug 11 00:08:05 +0530 2011
+  Processing by HomeController#divx as HTML
+  Parameters: {"commit"=>"Search", "divx_url"=>"http://playlists.1sfx.net/1202220/divx/2299610.xml", "authenticity_token"=>"n5TsyEQMQwoTA2osDtkKFbP8l51g5flaz8k+XZURmZc=", "utf8"=>"✓"}
+Rendered home/divx.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 46ms (Views: 21.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/home/divx" for 127.0.0.1 at Thu Aug 11 00:08:20 +0530 2011
+  Processing by HomeController#divx as HTML
+  Parameters: {"commit"=>"Search", "divx_url"=>"http://playlists.1sfx.net/1202220/divx/2299610.xml", "authenticity_token"=>"n5TsyEQMQwoTA2osDtkKFbP8l51g5flaz8k+XZURmZc=", "utf8"=>"✓"}
+Rendered home/divx.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 50ms (Views: 23.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/home/divx" for 127.0.0.1 at Thu Aug 11 00:08:24 +0530 2011
+  Processing by HomeController#divx as HTML
+  Parameters: {"commit"=>"Search", "divx_url"=>"http://playlists.1sfx.net/1202220/divx/2299610.xml", "authenticity_token"=>"n5TsyEQMQwoTA2osDtkKFbP8l51g5flaz8k+XZURmZc=", "utf8"=>"✓"}
+Rendered home/divx.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 20ms (Views: 8.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/home/divx" for 127.0.0.1 at Thu Aug 11 00:08:40 +0530 2011
+  Processing by HomeController#divx as HTML
+  Parameters: {"commit"=>"Search", "divx_url"=>"http://playlists.1sfx.net/1202220/divx/2299610.xml", "authenticity_token"=>"n5TsyEQMQwoTA2osDtkKFbP8l51g5flaz8k+XZURmZc=", "utf8"=>"✓"}
+Rendered home/divx.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 43ms (Views: 17.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Aug 11 00:09:13 +0530 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 30ms (Views: 28.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/home/divx" for 127.0.0.1 at Thu Aug 11 00:09:17 +0530 2011
+  Processing by HomeController#divx as HTML
+  Parameters: {"commit"=>"Search", "divx_url"=>"http://playlists.1sfx.net/1202220/divx/2299610.xml", "authenticity_token"=>"n5TsyEQMQwoTA2osDtkKFbP8l51g5flaz8k+XZURmZc=", "utf8"=>"✓"}
+Rendered home/divx.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 44ms (Views: 20.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/home/mrss_media" for 127.0.0.1 at Thu Aug 11 00:09:30 +0530 2011
+  Processing by HomeController#mrss_media as HTML
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"n5TsyEQMQwoTA2osDtkKFbP8l51g5flaz8k+XZURmZc=", "utf8"=>"✓", "live_url"=>"http://playlists.1sfx.net/1202220/os/2299610.xml"}
+Rendered home/mrss_media.html.erb within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 2500ms
+
+ActionView::Template::Error (can't convert String into Integer):
+    9: 
+    10: <h3>Item <br></h3>
+    11: <% data = @data["channel"]["item"] %>
+    12: Link: <%= data["link"] %> <br/>
+    13: <% content = data["group"]["content"] %>
+    14: <%  sample = {} %>
+    15: <%  content.each do |media| %>
+  app/views/home/mrss_media.html.erb:12:in `[]'
+  app/views/home/mrss_media.html.erb:12:in `_app_views_home_mrss_media_html_erb___11626348__612685388_0'
+
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (12.9ms)
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (19.6ms)
+
+
+Started POST "/home/mrss_media" for 127.0.0.1 at Thu Aug 11 00:10:54 +0530 2011
+  Processing by HomeController#mrss_media as HTML
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"n5TsyEQMQwoTA2osDtkKFbP8l51g5flaz8k+XZURmZc=", "utf8"=>"✓", "live_url"=>"http://playlists.1sfx.net/1202220/os/2299610.xml"}
+Rendered home/mrss_media.html.erb within layouts/application (3.0ms)
+Completed 500 Internal Server Error in 1371ms
+
+ActionView::Template::Error (can't convert String into Integer):
+    9: 
+    10: <h3>Item <br></h3>
+    11: <% data = @data["channel"]["item"] %>
+    12: <% if data && data["link"] %>
+    13: Link: <%= data["link"] %> <br/>
+    14: <% end  %>
+    15: <% content = data["group"]["content"] %>
+  app/views/home/mrss_media.html.erb:12:in `[]'
+  app/views/home/mrss_media.html.erb:12:in `_app_views_home_mrss_media_html_erb___11626348__613615888_0'
+
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.7ms)
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (31.6ms)
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (47.3ms)
+
+
+Started POST "/home/mrss_media" for 127.0.0.1 at Thu Aug 11 00:13:12 +0530 2011
+  Processing by HomeController#mrss_media as HTML
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"n5TsyEQMQwoTA2osDtkKFbP8l51g5flaz8k+XZURmZc=", "utf8"=>"✓", "live_url"=>"http://playlists.1sfx.net/1202220/os/2299610.xml"}
+Rendered home/mrss_media.html.erb within layouts/application (7.0ms)
+Completed 500 Internal Server Error in 2686ms
+
+ActionView::Template::Error (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]):
+    24:         Link: <%= data["link"] %> <br/>
+    25:       <% end  %>
+    26: 
+    27:             <% content = data["group"]["content"] %>
+    28:             <%  sample = {} %>
+    29:             <%  content.each do |media| %>
+    30:               <% if sample && (sample["fileSize"].to_i< media["fileSize"].to_i) %>
+  app/views/home/mrss_media.html.erb:27:in `_app_views_home_mrss_media_html_erb___11626348__614612978_0'
+  app/views/home/mrss_media.html.erb:13:in `each'
+  app/views/home/mrss_media.html.erb:13:in `_app_views_home_mrss_media_html_erb___11626348__614612978_0'
+
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (11.6ms)
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (18.0ms)
+
+
+Started POST "/home/mrss_media" for 127.0.0.1 at Thu Aug 11 00:14:00 +0530 2011
+  Processing by HomeController#mrss_media as HTML
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"n5TsyEQMQwoTA2osDtkKFbP8l51g5flaz8k+XZURmZc=", "utf8"=>"✓", "live_url"=>"http://playlists.1sfx.net/1202220/os/2299610.xml"}
+Rendered home/mrss_media.html.erb within layouts/application (7.3ms)
+Completed 500 Internal Server Error in 2399ms
+
+ActionView::Template::Error (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]):
+    24:         Link: <%= data["link"] %> <br/>
+    25:       <% end  %>
+    26: 
+    27:             <% content = data["group"]["content"] %>
+    28:             <%  sample = {} %>
+    29:             <%  content.each do |media| %>
+    30:               <% if sample && (sample["fileSize"].to_i< media["fileSize"].to_i) %>
+  app/views/home/mrss_media.html.erb:27:in `_app_views_home_mrss_media_html_erb___11626348__612958308_0'
+  app/views/home/mrss_media.html.erb:13:in `each'
+  app/views/home/mrss_media.html.erb:13:in `_app_views_home_mrss_media_html_erb___11626348__612958308_0'
+
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (12.9ms)
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (19.6ms)
+
+
+Started POST "/home/mrss_media" for 127.0.0.1 at Thu Aug 11 00:14:52 +0530 2011
+  Processing by HomeController#mrss_media as HTML
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"n5TsyEQMQwoTA2osDtkKFbP8l51g5flaz8k+XZURmZc=", "utf8"=>"✓", "live_url"=>"http://playlists.1sfx.net/1202220/os/2299610.xml"}
+Rendered home/mrss_media.html.erb within layouts/application (6.9ms)
+Completed 500 Internal Server Error in 1881ms
+
+ActionView::Template::Error (Array):
+    6: Link: <%= @data["channel"]["link"] %> <br/>
+    7: Description: <%= @data["channel"]["description"] %> <br/>
+    8: 
+    9: <% raise @data["channel"]["item"].class.to_s %>
+    10: 
+    11: <% if  @data["channel"]["item"].class.to_s == "Array" %>
+    12:   <h3>Items <br></h3>
+  app/views/home/mrss_media.html.erb:9:in `_app_views_home_mrss_media_html_erb___11626348__613900278_0'
+
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.8ms)
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (23.3ms)
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (38.1ms)
+
+
+Started POST "/home/mrss_media" for 127.0.0.1 at Thu Aug 11 00:15:36 +0530 2011
+  Processing by HomeController#mrss_media as HTML
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"n5TsyEQMQwoTA2osDtkKFbP8l51g5flaz8k+XZURmZc=", "utf8"=>"✓", "live_url"=>"http://playlists.1sfx.net/1202220/os/2299610.xml"}
+Rendered home/mrss_media.html.erb within layouts/application (6.9ms)
+Completed 500 Internal Server Error in 1611ms
+
+ActionView::Template::Error (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]):
+    24:         Link: <%= data["link"] %> <br/>
+    25:       <% end  %>
+    26: 
+    27:             <% content = data["group"]["content"] %>
+    28:             <%  sample = {} %>
+    29:             <%  content.each do |media| %>
+    30:               <% if sample && (sample["fileSize"].to_i< media["fileSize"].to_i) %>
+  app/views/home/mrss_media.html.erb:27:in `_app_views_home_mrss_media_html_erb___11626348__614760738_0'
+  app/views/home/mrss_media.html.erb:13:in `each'
+  app/views/home/mrss_media.html.erb:13:in `_app_views_home_mrss_media_html_erb___11626348__614760738_0'
+
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (92.4ms)
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (98.9ms)
+
+
+Started POST "/home/mrss_media" for 127.0.0.1 at Thu Aug 11 00:15:58 +0530 2011
+  Processing by HomeController#mrss_media as HTML
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"n5TsyEQMQwoTA2osDtkKFbP8l51g5flaz8k+XZURmZc=", "utf8"=>"✓", "live_url"=>"http://playlists.1sfx.net/1202220/os/2299610.xml"}
+Rendered home/mrss_media.html.erb within layouts/application (8.4ms)
+Completed 500 Internal Server Error in 1101ms
+
+ActionView::Template::Error (can't convert String into Integer):
+    73: 
+    74: <h3>Item <br></h3>
+    75: <% data = @data["channel"]["item"] %>
+    76: <% if data && data["link"] %>
+    77: Link: <%= data["link"] %> <br/>
+    78: <% end  %>
+    79: 
+  app/views/home/mrss_media.html.erb:76:in `[]'
+  app/views/home/mrss_media.html.erb:76:in `_app_views_home_mrss_media_html_erb___11626348__613205138_0'
+
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.7ms)
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (12.8ms)
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (25.7ms)
+
+
+Started POST "/home/mrss_media" for 127.0.0.1 at Thu Aug 11 00:16:13 +0530 2011
+  Processing by HomeController#mrss_media as HTML
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"n5TsyEQMQwoTA2osDtkKFbP8l51g5flaz8k+XZURmZc=", "utf8"=>"✓", "live_url"=>"http://playlists.1sfx.net/1202220/os/2299610.xml"}
+Rendered home/mrss_media.html.erb within layouts/application (16.9ms)
+Completed 200 OK in 1388ms (Views: 27.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/home/mrss_media" for 127.0.0.1 at Thu Aug 11 00:17:19 +0530 2011
+  Processing by HomeController#mrss_media as HTML
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"n5TsyEQMQwoTA2osDtkKFbP8l51g5flaz8k+XZURmZc=", "utf8"=>"✓", "live_url"=>"http://playlists.1sfx.net/1202220/os/2299610.xml"}
+Rendered home/mrss_media.html.erb within layouts/application (2.9ms)
+Completed 500 Internal Server Error in 2012ms
+
+ActionView::Template::Error (can't convert String into Integer):
+    34:             <% if sample == {} %>
+    35:               <% sample = data["content"]%>
+    36:             <% end %>
+    37:             URL: <%= sample["url"] %> <br/>
+    38: 
+    39: 
+    40: 
+  app/views/home/mrss_media.html.erb:37:in `[]'
+  app/views/home/mrss_media.html.erb:37:in `_app_views_home_mrss_media_html_erb___11626348__612698428_0'
+  app/views/home/mrss_media.html.erb:13:in `each'
+  app/views/home/mrss_media.html.erb:13:in `_app_views_home_mrss_media_html_erb___11626348__612698428_0'
+
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (13.0ms)
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (19.8ms)
+
+
+Started POST "/home/mrss_media" for 127.0.0.1 at Thu Aug 11 00:18:15 +0530 2011
+  Processing by HomeController#mrss_media as HTML
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"n5TsyEQMQwoTA2osDtkKFbP8l51g5flaz8k+XZURmZc=", "utf8"=>"✓", "live_url"=>"http://playlists.1sfx.net/1202220/os/2299610.xml"}
+Rendered home/mrss_media.html.erb within layouts/application (7.0ms)
+Completed 500 Internal Server Error in 1097ms
+
+ActionView::Template::Error (exception class/object expected):
+    24:         Link: <%= data["link"] %> <br/>
+    25:       <% end  %>
+    26: 
+    27:             <%  raise content = data["content"] %>
+    28:             <%  sample = {} %>
+    29:             <%  content.each do |media| %>
+    30:               <% if sample && (sample["fileSize"].to_i< media["fileSize"].to_i) %>
+  app/views/home/mrss_media.html.erb:27:in `raise'
+  app/views/home/mrss_media.html.erb:27:in `_app_views_home_mrss_media_html_erb___11626348__613678978_0'
+  app/views/home/mrss_media.html.erb:13:in `each'
+  app/views/home/mrss_media.html.erb:13:in `_app_views_home_mrss_media_html_erb___11626348__613678978_0'
+
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (11.9ms)
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (18.3ms)
+
+
+Started POST "/home/mrss_media" for 127.0.0.1 at Thu Aug 11 00:18:30 +0530 2011
+  Processing by HomeController#mrss_media as HTML
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"n5TsyEQMQwoTA2osDtkKFbP8l51g5flaz8k+XZURmZc=", "utf8"=>"✓", "live_url"=>"http://playlists.1sfx.net/1202220/os/2299610.xml"}
+Rendered home/mrss_media.html.erb within layouts/application (6.8ms)
+Completed 500 Internal Server Error in 2406ms
+
+ActionView::Template::Error ([{"duration"=>"", "medium"=>"video", "url"=>"http://videos.1sfx.net/s/1202220/1202220_DA_OTMyNTU0Mjg=.mp4", "bitrate"=>"264000", "height"=>"180", "width"=>"320"}, {"url"=>"http://items.1sfx.net/1202220/os/4881083.xml", "type"=>"xml", "description"=>"More data about this item..."}]):
+    24:         Link: <%= data["link"] %> <br/>
+    25:       <% end  %>
+    26: 
+    27:             <%  raise content = data["content"].inspect %>
+    28:             <%  sample = {} %>
+    29:             <%  content.each do |media| %>
+    30:               <% if sample && (sample["fileSize"].to_i< media["fileSize"].to_i) %>
+  app/views/home/mrss_media.html.erb:27:in `_app_views_home_mrss_media_html_erb___11626348__614634128_0'
+  app/views/home/mrss_media.html.erb:13:in `each'
+  app/views/home/mrss_media.html.erb:13:in `_app_views_home_mrss_media_html_erb___11626348__614634128_0'
+
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.6ms)
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (29.6ms)
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (45.7ms)
+
+
+Started POST "/home/mrss_media" for 127.0.0.1 at Thu Aug 11 00:19:17 +0530 2011
+  Processing by HomeController#mrss_media as HTML
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"n5TsyEQMQwoTA2osDtkKFbP8l51g5flaz8k+XZURmZc=", "utf8"=>"✓", "live_url"=>"http://playlists.1sfx.net/1202220/os/2299610.xml"}
+Rendered home/mrss_media.html.erb within layouts/application (7.4ms)
+Completed 500 Internal Server Error in 1898ms
+
+ActionView::Template::Error ({}):
+    31:                 <% sample = media %>
+    32:               <% end %>
+    33:             <% end %>
+    34:         <% raise sample.inspect %>
+    35:             <% if sample == {} %>
+    36:               <% sample = data["content"]%>
+    37:             <% end %>
+  app/views/home/mrss_media.html.erb:34:in `_app_views_home_mrss_media_html_erb___11626348__612963668_0'
+  app/views/home/mrss_media.html.erb:13:in `each'
+  app/views/home/mrss_media.html.erb:13:in `_app_views_home_mrss_media_html_erb___11626348__612963668_0'
+
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.8ms)
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (17.7ms)
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (32.8ms)
+
+
+Started POST "/home/mrss_media" for 127.0.0.1 at Thu Aug 11 00:20:09 +0530 2011
+  Processing by HomeController#mrss_media as HTML
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"n5TsyEQMQwoTA2osDtkKFbP8l51g5flaz8k+XZURmZc=", "utf8"=>"✓", "live_url"=>"http://playlists.1sfx.net/1202220/os/2299610.xml"}
+Rendered home/mrss_media.html.erb within layouts/application (7.4ms)
+Completed 500 Internal Server Error in 1384ms
+
+ActionView::Template::Error ({"duration"=>"", "medium"=>"video", "url"=>"http://videos.1sfx.net/s/1202220/1202220_DA_OTMyNTU0Mjg=.mp4", "bitrate"=>"264000", "height"=>"180", "width"=>"320"}):
+    31:                 <% sample = media %>
+    32:               <% end %>
+    33:             <% end %>
+    34:         <% raise sample.inspect %>
+    35:             <% if sample == {} %>
+    36:               <% sample = data["content"]%>
+    37:             <% end %>
+  app/views/home/mrss_media.html.erb:34:in `_app_views_home_mrss_media_html_erb___11626348__613921508_0'
+  app/views/home/mrss_media.html.erb:13:in `each'
+  app/views/home/mrss_media.html.erb:13:in `_app_views_home_mrss_media_html_erb___11626348__613921508_0'
+
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (11.8ms)
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (22.9ms)
+
+
+Started POST "/home/mrss_media" for 127.0.0.1 at Thu Aug 11 00:20:24 +0530 2011
+  Processing by HomeController#mrss_media as HTML
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"n5TsyEQMQwoTA2osDtkKFbP8l51g5flaz8k+XZURmZc=", "utf8"=>"✓", "live_url"=>"http://playlists.1sfx.net/1202220/os/2299610.xml"}
+Rendered home/mrss_media.html.erb within layouts/application (16.8ms)
+Completed 200 OK in 1105ms (Views: 27.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Aug 11 00:20:41 +0530 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (15.7ms)
+Completed 200 OK in 28ms (Views: 27.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/home/mrss_media" for 127.0.0.1 at Thu Aug 11 00:20:46 +0530 2011
+  Processing by HomeController#mrss_media as HTML
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"n5TsyEQMQwoTA2osDtkKFbP8l51g5flaz8k+XZURmZc=", "utf8"=>"✓", "live_url"=>"http://playlists.1sfx.net/1202220/simple/2299610.xml"}
+Rendered home/mrss_media.html.erb within layouts/application (6.8ms)
+Completed 500 Internal Server Error in 1819ms
+
+ActionView::Template::Error (can't convert String into Integer):
+    27:             <%  content = data["content"] %>
+    28:             <%  sample = content.first %>
+    29:             <%  content.each do |media| %>
+    30:               <% if sample && (sample["fileSize"].to_i< media["fileSize"].to_i) %>
+    31:                 <% sample = media %>
+    32:               <% end %>
+    33:             <% end %>
+  app/views/home/mrss_media.html.erb:30:in `[]'
+  app/views/home/mrss_media.html.erb:30:in `_app_views_home_mrss_media_html_erb___11626348__613366688_0'
+  app/views/home/mrss_media.html.erb:29:in `each'
+  app/views/home/mrss_media.html.erb:29:in `_app_views_home_mrss_media_html_erb___11626348__613366688_0'
+  app/views/home/mrss_media.html.erb:13:in `each'
+  app/views/home/mrss_media.html.erb:13:in `_app_views_home_mrss_media_html_erb___11626348__613366688_0'
+
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.7ms)
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (26.2ms)
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (41.1ms)
+
+
+Started POST "/home/mrss_media" for 127.0.0.1 at Thu Aug 11 00:22:32 +0530 2011
+  Processing by HomeController#mrss_media as HTML
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"n5TsyEQMQwoTA2osDtkKFbP8l51g5flaz8k+XZURmZc=", "utf8"=>"✓", "live_url"=>"http://playlists.1sfx.net/1202220/simple/2299610.xml"}
+Rendered home/mrss_media.html.erb within layouts/application (7.2ms)
+Completed 500 Internal Server Error in 1341ms
+
+ActionView::Template::Error (can't convert String into Integer):
+    27:             <%  content = data["content"] %>
+    28:             <%  sample = content.first %>
+    29:             <%  content.each do |media| %>
+    30:               <%  if sample["fileSize"] == "" %>
+    31:                 <%  sample["fileSize"] = 0 %>
+    32:               <% end %>
+    33:               <% if sample && (sample["fileSize"].to_i< media["fileSize"].to_i) %>
+  app/views/home/mrss_media.html.erb:30:in `[]'
+  app/views/home/mrss_media.html.erb:30:in `_app_views_home_mrss_media_html_erb___11626348__614250608_0'
+  app/views/home/mrss_media.html.erb:29:in `each'
+  app/views/home/mrss_media.html.erb:29:in `_app_views_home_mrss_media_html_erb___11626348__614250608_0'
+  app/views/home/mrss_media.html.erb:13:in `each'
+  app/views/home/mrss_media.html.erb:13:in `_app_views_home_mrss_media_html_erb___11626348__614250608_0'
+
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.6ms)
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (25.2ms)
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (40.7ms)
+
+
+Started POST "/home/mrss_media" for 127.0.0.1 at Thu Aug 11 00:23:01 +0530 2011
+  Processing by HomeController#mrss_media as HTML
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"n5TsyEQMQwoTA2osDtkKFbP8l51g5flaz8k+XZURmZc=", "utf8"=>"✓", "live_url"=>"http://playlists.1sfx.net/1202220/simple/2299610.xml"}
+Rendered home/mrss_media.html.erb within layouts/application (7.4ms)
+Completed 500 Internal Server Error in 1065ms
+
+ActionView::Template::Error (["duration", ""]):
+    27:             <%  content = data["content"] %>
+    28:             <%  sample = content.first %>
+    29:             <%  content.each do |media| %>
+    30:             <% raise sample.inspect %>
+    31:               <%  if sample["fileSize"] == "" %>
+    32:                 <%  sample["fileSize"] = 0 %>
+    33:               <% end %>
+  app/views/home/mrss_media.html.erb:30:in `_app_views_home_mrss_media_html_erb___11626348__614920978_0'
+  app/views/home/mrss_media.html.erb:29:in `each'
+  app/views/home/mrss_media.html.erb:29:in `_app_views_home_mrss_media_html_erb___11626348__614920978_0'
+  app/views/home/mrss_media.html.erb:13:in `each'
+  app/views/home/mrss_media.html.erb:13:in `_app_views_home_mrss_media_html_erb___11626348__614920978_0'
+
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (10.9ms)
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (18.0ms)
+
+
+Started POST "/home/mrss_media" for 127.0.0.1 at Thu Aug 11 00:24:12 +0530 2011
+  Processing by HomeController#mrss_media as HTML
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"n5TsyEQMQwoTA2osDtkKFbP8l51g5flaz8k+XZURmZc=", "utf8"=>"✓", "live_url"=>"http://playlists.1sfx.net/1202220/simple/2299610.xml"}
+Rendered home/mrss_media.html.erb within layouts/application (7.6ms)
+Completed 500 Internal Server Error in 774ms
+
+ActionView::Template::Error (can't convert String into Integer):
+    38:             <% if sample == {} %>
+    39:               <% sample = data["content"]%>
+    40:             <% end %>
+    41:             URL: <%= sample["url"] %> <br/>
+    42: 
+    43: 
+    44: 
+  app/views/home/mrss_media.html.erb:41:in `[]'
+  app/views/home/mrss_media.html.erb:41:in `_app_views_home_mrss_media_html_erb___11626348__613374378_0'
+  app/views/home/mrss_media.html.erb:13:in `each'
+  app/views/home/mrss_media.html.erb:13:in `_app_views_home_mrss_media_html_erb___11626348__613374378_0'
+
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.8ms)
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (18.4ms)
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (33.2ms)
+
+
+Started POST "/home/mrss_media" for 127.0.0.1 at Thu Aug 11 00:24:37 +0530 2011
+  Processing by HomeController#mrss_media as HTML
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"n5TsyEQMQwoTA2osDtkKFbP8l51g5flaz8k+XZURmZc=", "utf8"=>"✓", "live_url"=>"http://playlists.1sfx.net/1202220/simple/2299610.xml"}
+Rendered home/mrss_media.html.erb within layouts/application (7.4ms)
+Completed 500 Internal Server Error in 769ms
+
+ActionView::Template::Error (can't convert String into Integer):
+    38:             <% if sample == {} %>
+    39:               <% sample = data["content"]%>
+    40:             <% end %>
+    41:             URL: <%= sample["url"] %> <br/>
+    42: 
+    43: 
+    44: 
+  app/views/home/mrss_media.html.erb:41:in `[]'
+  app/views/home/mrss_media.html.erb:41:in `_app_views_home_mrss_media_html_erb___11626348__614248328_0'
+  app/views/home/mrss_media.html.erb:13:in `each'
+  app/views/home/mrss_media.html.erb:13:in `_app_views_home_mrss_media_html_erb___11626348__614248328_0'
+
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.6ms)
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (25.3ms)
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (40.9ms)
+
+
+Started POST "/home/mrss_media" for 127.0.0.1 at Thu Aug 11 00:25:10 +0530 2011
+  Processing by HomeController#mrss_media as HTML
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"n5TsyEQMQwoTA2osDtkKFbP8l51g5flaz8k+XZURmZc=", "utf8"=>"✓", "live_url"=>"http://playlists.1sfx.net/1202220/simple/2299610.xml"}
+Rendered home/mrss_media.html.erb within layouts/application (7.3ms)
+Completed 500 Internal Server Error in 1070ms
+
+ActionView::Template::Error ({"duration"=>"", "medium"=>"video", "url"=>"http://videos.1sfx.net/s/1202220/1202220_DA_OTMyNTU0Mjg=.mp4", "bitrate"=>"264000", "height"=>"180", "width"=>"320"}):
+    24:         Link: <%= data["link"] %> <br/>
+    25:       <% end  %>
+    26: 
+    27:             <%  raise content = data["content"].inspect %>
+    28:             <%  sample = content.first %>
+    29:             <%  (sample.class == "Hash") && content.each do |media| %>
+    30:               <%  if sample["fileSize"] == "" %>
+  app/views/home/mrss_media.html.erb:27:in `_app_views_home_mrss_media_html_erb___11626348__614923788_0'
+  app/views/home/mrss_media.html.erb:13:in `each'
+  app/views/home/mrss_media.html.erb:13:in `_app_views_home_mrss_media_html_erb___11626348__614923788_0'
+
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (109.1ms)
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (11.5ms)
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (129.7ms)
+
+
+Started POST "/home/mrss_media" for 127.0.0.1 at Thu Aug 11 00:26:45 +0530 2011
+  Processing by HomeController#mrss_media as HTML
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"n5TsyEQMQwoTA2osDtkKFbP8l51g5flaz8k+XZURmZc=", "utf8"=>"✓", "live_url"=>"http://playlists.1sfx.net/1202220/simple/2299610.xml"}
+Rendered home/mrss_media.html.erb within layouts/application (8.0ms)
+Completed 500 Internal Server Error in 1069ms
+
+ActionView::Template::Error (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]):
+    40:             <% if sample == {} %>
+    41:               <% sample = data["content"]%>
+    42:             <% end %>
+    43:             URL: <%= sample["url"] %> <br/>
+    44: 
+    45: 
+    46: 
+  app/views/home/mrss_media.html.erb:43:in `_app_views_home_mrss_media_html_erb___11626348__613171448_0'
+  app/views/home/mrss_media.html.erb:13:in `each'
+  app/views/home/mrss_media.html.erb:13:in `_app_views_home_mrss_media_html_erb___11626348__613171448_0'
+
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.7ms)
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (24.5ms)
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (39.2ms)
+
+
+Started POST "/home/mrss_media" for 127.0.0.1 at Thu Aug 11 00:28:00 +0530 2011
+  Processing by HomeController#mrss_media as HTML
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"n5TsyEQMQwoTA2osDtkKFbP8l51g5flaz8k+XZURmZc=", "utf8"=>"✓", "live_url"=>"http://playlists.1sfx.net/1202220/simple/2299610.xml"}
+Completed 500 Internal Server Error in 6208ms
+
+RuntimeError (Unable to read the file: #<REXML::ParseException: Missing end tag for 'td' (got "body")
+Line: 128
+Position: 8985
+Last 80 unconsumed characters:
+>
+/home/jyothi/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/rexml/parsers/baseparser.rb:330:in `pull'
+/home/jyothi/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/rexml/parsers/treeparser.rb:22:in `parse'
+/home/jyothi/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/rexml/document.rb:227:in `build'
+/home/jyothi/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/rexml/document.rb:43:in `initialize'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-3.0.9/lib/active_support/xml_mini/rexml.rb:29:in `new'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-3.0.9/lib/active_support/xml_mini/rexml.rb:29:in `parse'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-3.0.9/lib/active_support/xml_mini.rb:78:in `__send__'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-3.0.9/lib/active_support/xml_mini.rb:78:in `parse'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-3.0.9/lib/active_support/core_ext/hash/conversions.rb:78:in `from_xml'
+/home/jyothi/projects/rss/app/controllers/home_controller.rb:26:in `mrss_media'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/abstract_controller/base.rb:150:in `process_action'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_controller/metal/rendering.rb:11:in `process_action'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/abstract_controller/callbacks.rb:18:in `process_action'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-3.0.9/lib/active_support/callbacks.rb:436:in `_run__738958071__process_action__704386728__callbacks'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-3.0.9/lib/active_support/callbacks.rb:410:in `send'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-3.0.9/lib/active_support/callbacks.rb:410:in `_run_process_action_callbacks'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-3.0.9/lib/active_support/callbacks.rb:94:in `send'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-3.0.9/lib/active_support/callbacks.rb:94:in `run_callbacks'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-3.0.9/lib/active_support/notifications.rb:52:in `instrument'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-3.0.9/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-3.0.9/lib/active_support/notifications.rb:52:in `instrument'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_controller/metal/rescue.rb:17:in `process_action'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/abstract_controller/base.rb:119:in `process'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/abstract_controller/rendering.rb:41:in `process'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_controller/metal.rb:138:in `dispatch'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_controller/metal.rb:178:in `action'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/routing/route_set.rb:62:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/routing/route_set.rb:62:in `dispatch'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/routing/route_set.rb:27:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/rack-mount-0.6.14/lib/rack/mount/route_set.rb:148:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:93:in `recognize'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:68:in `optimized_each'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:92:in `recognize'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/rack-mount-0.6.14/lib/rack/mount/route_set.rb:139:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/routing/route_set.rb:493:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/head.rb:14:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.2.3/lib/rack/methodoverride.rb:24:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/flash.rb:182:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/cookies.rb:302:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activerecord-3.0.9/lib/active_record/query_cache.rb:32:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activerecord-3.0.9/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activerecord-3.0.9/lib/active_record/query_cache.rb:12:in `cache'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activerecord-3.0.9/lib/active_record/query_cache.rb:31:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activerecord-3.0.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:354:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/callbacks.rb:46:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-3.0.9/lib/active_support/callbacks.rb:416:in `_run_call_callbacks'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.2.3/lib/rack/sendfile.rb:107:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/show_exceptions.rb:47:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/railties-3.0.9/lib/rails/rack/logger.rb:13:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.2.3/lib/rack/runtime.rb:17:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-3.0.9/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.2.3/lib/rack/lock.rb:11:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.2.3/lib/rack/lock.rb:11:in `synchronize'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.2.3/lib/rack/lock.rb:11:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/static.rb:30:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/railties-3.0.9/lib/rails/application.rb:168:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/railties-3.0.9/lib/rails/application.rb:77:in `send'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/railties-3.0.9/lib/rails/application.rb:77:in `method_missing'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/railties-3.0.9/lib/rails/rack/log_tailer.rb:14:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.2.3/lib/rack/content_length.rb:13:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.2.3/lib/rack/handler/webrick.rb:52:in `service'
+/home/jyothi/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/home/jyothi/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/home/jyothi/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/home/jyothi/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/home/jyothi/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/home/jyothi/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/home/jyothi/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/home/jyothi/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/home/jyothi/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/home/jyothi/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.2.3/lib/rack/handler/webrick.rb:13:in `run'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.2.3/lib/rack/server.rb:217:in `start'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/railties-3.0.9/lib/rails/commands/server.rb:65:in `start'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/railties-3.0.9/lib/rails/commands.rb:30
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/railties-3.0.9/lib/rails/commands.rb:27:in `tap'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/railties-3.0.9/lib/rails/commands.rb:27
+script/rails:6:in `require'
+script/rails:6
+...
+Missing end tag for 'td' (got "body")
+Line: 128
+Position: 8985
+Last 80 unconsumed characters:
+
+Line: 128
+Position: 8985
+Last 80 unconsumed characters:
+):
+  app/controllers/home_controller.rb:29:in `mrss_media'
+
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.5ms)
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (19.3ms)
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (34.1ms)
+
+
+Started POST "/home/mrss_media" for 127.0.0.1 at Thu Aug 11 00:28:27 +0530 2011
+  Processing by HomeController#mrss_media as HTML
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"n5TsyEQMQwoTA2osDtkKFbP8l51g5flaz8k+XZURmZc=", "utf8"=>"✓", "live_url"=>"http://playlists.1sfx.net/1202220/simple/2299610.xml"}
+Rendered home/mrss_media.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 1641ms (Views: 26.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/home/mrss_media" for 127.0.0.1 at Thu Aug 11 00:29:05 +0530 2011
+  Processing by HomeController#mrss_media as HTML
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"n5TsyEQMQwoTA2osDtkKFbP8l51g5flaz8k+XZURmZc=", "utf8"=>"✓", "live_url"=>"http://playlists.1sfx.net/1202220/simple/2299610.xml"}
+Rendered home/mrss_media.html.erb within layouts/application (16.8ms)
+Completed 200 OK in 1093ms (Views: 27.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/home/mrss_media" for 127.0.0.1 at Thu Aug 11 00:29:15 +0530 2011
+  Processing by HomeController#mrss_media as HTML
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"n5TsyEQMQwoTA2osDtkKFbP8l51g5flaz8k+XZURmZc=", "utf8"=>"✓", "live_url"=>"http://playlists.1sfx.net/1202220/simple/2299610.xml"}
+Rendered home/mrss_media.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 1046ms (Views: 12.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/home/mrss_media" for 127.0.0.1 at Thu Aug 11 00:29:23 +0530 2011
+  Processing by HomeController#mrss_media as HTML
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"n5TsyEQMQwoTA2osDtkKFbP8l51g5flaz8k+XZURmZc=", "utf8"=>"✓", "live_url"=>"http://playlists.1sfx.net/1202220/simple/2299610.xml"}
+Rendered home/mrss_media.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 743ms (Views: 12.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/home/divx" for 127.0.0.1 at Thu Aug 11 00:29:42 +0530 2011
+  Processing by HomeController#divx as HTML
+  Parameters: {"commit"=>"Search", "divx_url"=>"http://items.1sfx.net/1202220/os/4881083.xml", "authenticity_token"=>"n5TsyEQMQwoTA2osDtkKFbP8l51g5flaz8k+XZURmZc=", "utf8"=>"✓"}
+Rendered home/divx.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 47ms (Views: 21.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Aug 11 00:29:45 +0530 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 28ms (Views: 26.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/home/mrss_media" for 127.0.0.1 at Thu Aug 11 00:29:57 +0530 2011
+  Processing by HomeController#mrss_media as HTML
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"n5TsyEQMQwoTA2osDtkKFbP8l51g5flaz8k+XZURmZc=", "utf8"=>"✓", "live_url"=>"http://playlists.1sfx.net/1202220/os/2299610.xml"}
+Completed 500 Internal Server Error in 16388ms
+
+RuntimeError (Unable to read the file: #<REXML::ParseException: Missing end tag for 'td' (got "body")
+Line: 128
+Position: 8985
+Last 80 unconsumed characters:
+>
+/home/jyothi/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/rexml/parsers/baseparser.rb:330:in `pull'
+/home/jyothi/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/rexml/parsers/treeparser.rb:22:in `parse'
+/home/jyothi/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/rexml/document.rb:227:in `build'
+/home/jyothi/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/rexml/document.rb:43:in `initialize'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-3.0.9/lib/active_support/xml_mini/rexml.rb:29:in `new'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-3.0.9/lib/active_support/xml_mini/rexml.rb:29:in `parse'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-3.0.9/lib/active_support/xml_mini.rb:78:in `__send__'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-3.0.9/lib/active_support/xml_mini.rb:78:in `parse'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-3.0.9/lib/active_support/core_ext/hash/conversions.rb:78:in `from_xml'
+/home/jyothi/projects/rss/app/controllers/home_controller.rb:26:in `mrss_media'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/abstract_controller/base.rb:150:in `process_action'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_controller/metal/rendering.rb:11:in `process_action'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/abstract_controller/callbacks.rb:18:in `process_action'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-3.0.9/lib/active_support/callbacks.rb:436:in `_run__738958071__process_action__704386728__callbacks'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-3.0.9/lib/active_support/callbacks.rb:410:in `send'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-3.0.9/lib/active_support/callbacks.rb:410:in `_run_process_action_callbacks'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-3.0.9/lib/active_support/callbacks.rb:94:in `send'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-3.0.9/lib/active_support/callbacks.rb:94:in `run_callbacks'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-3.0.9/lib/active_support/notifications.rb:52:in `instrument'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-3.0.9/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-3.0.9/lib/active_support/notifications.rb:52:in `instrument'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_controller/metal/rescue.rb:17:in `process_action'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/abstract_controller/base.rb:119:in `process'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/abstract_controller/rendering.rb:41:in `process'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_controller/metal.rb:138:in `dispatch'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_controller/metal.rb:178:in `action'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/routing/route_set.rb:62:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/routing/route_set.rb:62:in `dispatch'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/routing/route_set.rb:27:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/rack-mount-0.6.14/lib/rack/mount/route_set.rb:148:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:93:in `recognize'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:68:in `optimized_each'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:92:in `recognize'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/rack-mount-0.6.14/lib/rack/mount/route_set.rb:139:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/routing/route_set.rb:493:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/head.rb:14:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.2.3/lib/rack/methodoverride.rb:24:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/flash.rb:182:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/cookies.rb:302:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activerecord-3.0.9/lib/active_record/query_cache.rb:32:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activerecord-3.0.9/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activerecord-3.0.9/lib/active_record/query_cache.rb:12:in `cache'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activerecord-3.0.9/lib/active_record/query_cache.rb:31:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activerecord-3.0.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:354:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/callbacks.rb:46:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-3.0.9/lib/active_support/callbacks.rb:416:in `_run_call_callbacks'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.2.3/lib/rack/sendfile.rb:107:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/show_exceptions.rb:47:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/railties-3.0.9/lib/rails/rack/logger.rb:13:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.2.3/lib/rack/runtime.rb:17:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-3.0.9/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.2.3/lib/rack/lock.rb:11:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.2.3/lib/rack/lock.rb:11:in `synchronize'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.2.3/lib/rack/lock.rb:11:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/static.rb:30:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/railties-3.0.9/lib/rails/application.rb:168:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/railties-3.0.9/lib/rails/application.rb:77:in `send'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/railties-3.0.9/lib/rails/application.rb:77:in `method_missing'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/railties-3.0.9/lib/rails/rack/log_tailer.rb:14:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.2.3/lib/rack/content_length.rb:13:in `call'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.2.3/lib/rack/handler/webrick.rb:52:in `service'
+/home/jyothi/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/home/jyothi/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/home/jyothi/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/home/jyothi/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/home/jyothi/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/home/jyothi/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/home/jyothi/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/home/jyothi/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/home/jyothi/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/home/jyothi/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.2.3/lib/rack/handler/webrick.rb:13:in `run'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.2.3/lib/rack/server.rb:217:in `start'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/railties-3.0.9/lib/rails/commands/server.rb:65:in `start'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/railties-3.0.9/lib/rails/commands.rb:30
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/railties-3.0.9/lib/rails/commands.rb:27:in `tap'
+/home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/railties-3.0.9/lib/rails/commands.rb:27
+script/rails:6:in `require'
+script/rails:6
+...
+Missing end tag for 'td' (got "body")
+Line: 128
+Position: 8985
+Last 80 unconsumed characters:
+
+Line: 128
+Position: 8985
+Last 80 unconsumed characters:
+):
+  app/controllers/home_controller.rb:29:in `mrss_media'
+
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.5ms)
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (19.1ms)
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (34.1ms)
+
+
+Started POST "/home/mrss_media" for 127.0.0.1 at Thu Aug 11 00:30:24 +0530 2011
+  Processing by HomeController#mrss_media as HTML
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"n5TsyEQMQwoTA2osDtkKFbP8l51g5flaz8k+XZURmZc=", "utf8"=>"✓", "live_url"=>"http://playlists.1sfx.net/1202220/os/2299610.xml"}
+Rendered home/mrss_media.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 1394ms (Views: 14.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/home/mrss_media" for 127.0.0.1 at Thu Aug 11 00:30:33 +0530 2011
+  Processing by HomeController#mrss_media as HTML
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"n5TsyEQMQwoTA2osDtkKFbP8l51g5flaz8k+XZURmZc=", "utf8"=>"✓", "live_url"=>"http://playlists.1sfx.net/1202220/os/2299610.xml"}
+Rendered home/mrss_media.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 1099ms (Views: 19.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/home/mrss_media" for 127.0.0.1 at Thu Aug 11 00:30:56 +0530 2011
+  Processing by HomeController#mrss_media as HTML
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"n5TsyEQMQwoTA2osDtkKFbP8l51g5flaz8k+XZURmZc=", "utf8"=>"✓", "live_url"=>"http://playlists.1sfx.net/1202220/simple/2299610.xml"}
+Rendered home/mrss_media.html.erb within layouts/application (15.9ms)
+Completed 200 OK in 1571ms (Views: 26.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Aug 11 00:31:08 +0530 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 17ms (Views: 16.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/home/mrss_media" for 127.0.0.1 at Thu Aug 11 00:31:11 +0530 2011
+  Processing by HomeController#mrss_media as HTML
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"n5TsyEQMQwoTA2osDtkKFbP8l51g5flaz8k+XZURmZc=", "utf8"=>"✓", "live_url"=>"http://items.1sfx.net/1202220/os/4881083.xml"}
+Completed 500 Internal Server Error in 40036ms
+
+RuntimeError (Unable to read the file: getaddrinfo: Name or service not known):
+  app/controllers/home_controller.rb:29:in `mrss_media'
+
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.6ms)
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (19.0ms)
+Rendered /home/jyothi/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (33.4ms)
