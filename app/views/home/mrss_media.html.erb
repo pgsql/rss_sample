@@ -1,0 +1,32 @@
+<h3>RSS Root Values <br></h3>
+
+<% @data = @bak_data = @data['rss'] %>
+
+Song title: <%= @data["channel"]["title"] %> <br/>
+Link: <%= @data["channel"]["link"] %> <br/>
+Description: <%= @data["channel"]["description"] %> <br/>
+
+
+<h3>Item <br></h3>
+<% data = @data["channel"]["item"] %>
+Link: <%= data["link"] %> <br/>
+<% content = data["group"]["content"] %>
+<%  sample = {} %>
+<%  content.each do |media| %>
+ <% if sample && (sample["fileSize"].to_i< media["fileSize"].to_i) %>
+      <% sample = media %>
+ <% end %>
+<% end %>
+
+URL: <%= sample["url"] %> <br/>
+
+  
+<h1>BODY: <br></h1>
+
+<%= @bak_data.inspect %> <br/>
+
+
+
+
+  
+

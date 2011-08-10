@@ -1,0 +1,35 @@
+<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss /"
+xmlns:divxtv="http://divxtv.com/feed/extension/1.0">
+<channel>
+<title>channel title</title>
+<link>url to related page or to this feed</link>
+<description>channel description</description>
+<pubDate></pubDate>
+<lastBuildDate></lastBuildDate>
+
+<image>
+<url>url to default thumbnail</url>
+<width></width>
+<height></height>
+</image>
+
+<item>
+<guid>guid</guid>
+<pubDate>Sun, 19 May 2002 15:21:36 GMT</pubDate>
+<lastBuildDate>Sun, 19 May 2002 15:21:36 GMT</lastBuildDate>
+<media:title type="plain">title</media:title>
+<media:description type="plain">decription
+</media:description>
+<media:thumbnail url="" width="" height="" />
+<media:content url='http://url.to.content.file' type='video/mp4'
+width='' height='' bitrate='' framerate='' />
+<media:copyright></media:copyright>
+<media:license></media:license>
+<media:rating scheme="urn:mpaa">pg</media:rating>
+
+<divxtv:adinfo assetId='video asset id'>
+<divxtv:adslot time='' class='' type='' width='' height='' />
+</divxtv:adinfo>
+</item>
+</channel>
+</rss>

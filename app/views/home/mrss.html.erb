@@ -1,0 +1,34 @@
+<h3>RSS Root Values <br></h3>
+
+<% @data = @bak_data = @data['rss'] %>
+
+Song title: <%= @data["channel"]["title"] %> <br/>
+Link: <%= @data["channel"]["link"] %> <br/>
+Description: <%= @data["channel"]["description"] %> <br/>
+
+
+<h3>Item <br></h3>
+<% data = @data["channel"]["item"] %>
+Link: <%= data["link"] %> <br/>
+URL : <%= data["content"]["url"] %>
+<h4>Scenes:</h4> <% scene = data["scenes"]["scene"] %> <br/>
+  sceneTitle: <%= scene["sceneTitle"] %> <br/>
+  sceneDescription: <%= scene["sceneDescription"] %> <br/>
+<h4>Comments:</h4> <% comments = data["comments"]["comment"] %> <br/>
+  Comment1: <%= comments.first %> <br/>
+  Comment2 <%= comments.last %> <br/>
+
+<h4>Responses: </h4> <% responses = data["responses"]["response"] %> <br/>
+  Response1: <%= responses.first %> <br/>
+  Response2: <%= responses.last %> <br/>
+  
+  
+<h1>BODY: <br></h1>
+
+<%= @bak_data.inspect %> <br/>
+
+
+
+
+  
+

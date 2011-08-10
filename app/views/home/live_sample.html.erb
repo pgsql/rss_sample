@@ -1,0 +1,61 @@
+<h3>RSS Root Values <br></h3>
+<% @data = @bak_data = @data['rss'] %>
+<% if @data["channel"] && @data["channel"]["title"] %>
+  Title: <%= @data["channel"]["title"] %> <br/>
+<% end  %>
+<% if @data["channel"] && @data["channel"]["author"] %>
+  Author: <%= @data["channel"]["author"] %> <br/>
+<% end  %>
+<% if @data["channel"] && @data["channel"]["link"] %>
+  Link: <%= @data["channel"]["link"] %> <br/>
+<% end  %>
+<% if @data["channel"] && @data["channel"]["description"] %>
+  Description: <%= @data["channel"]["description"] %> <br/>
+<% end  %>
+<% if @data["channel"] && @data["channel"]["keywords"] %>
+  Keywords: <%= @data["channel"]["keywords"] %> <br/>
+<% end  %>
+
+<br/><br/><br/><br/><br/>
+
+<% if  @data["channel"]["item"].class.to_s == "Array" %>
+  <h3>Items <br></h3>
+  <% @data["channel"]["item"].each do |data|  %>
+---------------------------------------------------------<br/>
+      Title: <%= data["title"] %> 
+      <% content1 = data["content"].inspect%> <br/>
+      Author: <%= data["author"] %> <br/>
+      GUID: <%= data["guid"] %> <br/>
+      <% if data && data["link"] %>
+        Link: <%= data["link"] %> <br/>
+      <% end  %>
+      URL: <%= data["media"]["url"] unless data["media"].blank?  %> <%= data["content"]["url"] unless data["content"].blank?  %><%= data["enclosure"]["url"] unless data["enclosure"].blank?  %><br/>
+      Description: <%= data["description"] %> <br/>
+      Keywords <%= data["keywords"] %> <br/>
+      Content URL:<%= content1["url"]  unless content1.class == "Array" %> <br/>
+ 
+  <% end %>
+<% else %>
+
+
+  <h3>Item <br></h3>
+  <%  data = @data["channel"]["item"] %>
+  <%  content1 = data["content"]%> <br/>
+  Title: <%= data["title"] %> <br/>
+  Description: <%= data["description"] %> <br/>
+  GUID: <%= data["guid"] %> <br/>
+  Author: <%= data["author"] %> <br/>
+  Subtitle: <%= data["subtitle"] %> <br/>
+  Keywords: <%= data["keywords"] %> <br/>
+<% end  %>
+
+
+<h1>BODY: <br></h1>
+
+<%= @data.inspect %> <br/>
+
+
+
+
+
+

@@ -1,0 +1,25 @@
+<h3>RSS Root Values <br></h3>
+<% @data = @bak_data = @data['rss'] %>
+
+ Title: <%= @data["channel"]["title"] %> <br/>
+ Link: <%= @data["channel"]["link"] %> <br/>
+ Description: <%= @data["channel"]["description"] %> <br/>
+
+
+
+<h3>Items <br></h3>
+
+<% @data["channel"]["item"].each do |data|  %>
+    Title: <%= data["title"] %> <br/>
+    GUID: <%= data["guid"] %> <br/>
+    URL: <%= data["enclosure"]["url"] %> <br/>
+    Subtitle <%= data["subtitle"] %> <br/>
+    Duration: <%= data["duration"] %> <br/>
+    PubDate: <%= data["pubDate"] %> <br/>
+<br/>
+<% end %>
+
+<h1>BODY: <br></h1>
+
+<%= @bak_data.inspect %> <br/>
+
