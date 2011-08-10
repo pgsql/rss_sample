@@ -41,8 +41,7 @@ Description: <%= @data["channel"]["description"] %> <br/>
               <% sample = data["content"]%>
             <% end %>
 
-           
-
+         
 
 
 
@@ -64,7 +63,10 @@ Description: <%= @data["channel"]["description"] %> <br/>
   Keywords: <%= data["keywords"] %> <br/>
   <% content = data["content"] %>
     <%  sample = {} %>
-    <%  content.each do |media| %>
+     <%  sample = content.first if content.class.to_s == "Array"  %>
+            <%  sample = content if content.class.to_s == "Hash"  %>
+
+       <%  (content.class.to_s == "Array") && content.each do |media| %>
       <% if sample && (sample["fileSize"].to_i< media["fileSize"].to_i) %>
         <% sample = media %>
       <% end %>
@@ -72,7 +74,7 @@ Description: <%= @data["channel"]["description"] %> <br/>
     <% if sample == {} %>
       <% sample = data["content"]%>
     <% end %>
-    URL: <%= sample["url"] %> <br/>
+    
 
   <% end  %>
 
