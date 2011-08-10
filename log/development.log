@@ -8962,3 +8962,22 @@ Started POST "/home/mrss_media" for 127.0.0.1 at Thu Aug 11 01:39:52 +0530 2011
   Parameters: {"commit"=>"Search", "authenticity_token"=>"n5TsyEQMQwoTA2osDtkKFbP8l51g5flaz8k+XZURmZc=", "utf8"=>"✓", "live_url"=>"http://playlists.1sfx.net/1202220/os/2299610.xml"}
 Rendered home/mrss_media.html.erb within layouts/application (15.7ms)
 Completed 200 OK in 1886ms (Views: 27.5ms | ActiveRecord: 0.0ms)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from service at /home/jyothi/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104)
+
+
+Started GET "/" for 127.0.0.1 at Thu Aug 11 01:48:38 +0530 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 10ms (Views: 9.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Aug 11 01:48:39 +0530 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 11ms (Views: 10.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Aug 11 01:48:39 +0530 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 11ms (Views: 10.0ms | ActiveRecord: 0.0ms)
