@@ -24,14 +24,34 @@
 ---------------------------------------------------------<br/>
       Title: <%= data["title"] %> 
       <% content1 = data["content"].inspect%> <br/>
-      Author: <%= data["author"] %> <br/>
+      <% if data && data["author"] %>
+        Author: <%= data["author"] %> <br/>
+      <% end  %>
+
       GUID: <%= data["guid"] %> <br/>
+
       <% if data && data["link"] %>
         Link: <%= data["link"] %> <br/>
       <% end  %>
-      URL: <%= data["media"]["url"] unless data["media"].blank?  %> <%= data["content"]["url"] unless data["content"].blank?  %><%= data["enclosure"]["url"] unless data["enclosure"].blank?  %><br/>
+        
+      <% if !(data["content"].class.to_s == "Array") %>
+        URL: <%= data["content"]["url"] unless data["content"].blank?  %><%= data["enclosure"]["url"] unless data["enclosure"].blank?  %><br/>
+      <% elsif !data["content"].blank? %>
+        URL: <%=  data["content"].first && data["content"].first["url"] %> <br/>
+      <% end  %>
+
+      <% if data && data["media"] %>
+        URL:  <%= data["media"]["url"] unless data["media"].blank?  %>
+      <% end %>
+        
+      <% if data && data["enclosure"] %>
+        URL:  <%= data["enclosure"]["url"] unless data["enclosure"].blank?  %>
+      <% end %>
+
+
+        
       Description: <%= data["description"] %> <br/>
-      Keywords <%= data["keywords"] %> <br/>
+      Keywords: <%= data["keywords"] %> <br/>
       Content URL:<%= content1["url"]  unless content1.class == "Array" %> <br/>
  
   <% end %>
