@@ -47,8 +47,12 @@ class HomeController < ApplicationController
   def divx
     begin
       content = ""
-      content = IO.read('divx.xml')
+      open(params['live_url']) do |s| content = s.read end
+      File.open('test2.xml', 'w') do |f2|
+        f2.puts content
+      end
       @data =  Hash.from_xml(content)
+      puts @data.inspect
     rescue Exception => e
      raise "Unable to read the file: #{e.message}"
     end

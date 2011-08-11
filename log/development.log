@@ -22216,3 +22216,52 @@ Started POST "/home/mrss_media" for 127.0.0.1 at Fri Aug 12 01:16:38 +0530 2011
 Rendered home/_mrss.erb (4.9ms)
 Rendered home/mrss_media.html.erb within layouts/application (17.7ms)
 Completed 200 OK in 749ms (Views: 29.0ms | ActiveRecord: 0.0ms)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from service at /home/jyothi/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104)
+
+
+Started GET "/" for 127.0.0.1 at Fri Aug 12 02:02:01 +0530 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 14ms (Views: 13.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/home/divx" for 127.0.0.1 at Fri Aug 12 02:02:04 +0530 2011
+  Processing by HomeController#divx as HTML
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"cJbLI3pAcwgvzLB0AJQqrp+cLldWcNNJMmY1Zhr6wpg=", "utf8"=>"✓", "live_url"=>"http://playlists.1sfx.net/1202220/divx/2299610.xml"}
+Rendered home/_divx.erb (4.0ms)
+Rendered home/_divx.erb (3.5ms)
+Rendered home/_divx.erb (3.9ms)
+Rendered home/_divx.erb (4.0ms)
+Rendered home/_divx.erb (3.6ms)
+Rendered home/divx.html.erb within layouts/application (47.3ms)
+Completed 200 OK in 1651ms (Views: 59.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/home/divx" for 127.0.0.1 at Fri Aug 12 02:02:30 +0530 2011
+  Processing by HomeController#divx as HTML
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"cJbLI3pAcwgvzLB0AJQqrp+cLldWcNNJMmY1Zhr6wpg=", "utf8"=>"✓", "live_url"=>"http://playlists.1sfx.net/1202220/divx/2299610.xml"}
+Rendered home/_divx.erb (1.5ms)
+Rendered home/_divx.erb (1.7ms)
+Rendered home/_divx.erb (1.5ms)
+Rendered home/_divx.erb (1.5ms)
+Rendered home/_divx.erb (1.5ms)
+Rendered home/divx.html.erb within layouts/application (19.1ms)
+Completed 200 OK in 2008ms (Views: 23.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Aug 12 02:03:25 +0530 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 25ms (Views: 24.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/home/divx" for 127.0.0.1 at Fri Aug 12 02:03:27 +0530 2011
+  Processing by HomeController#divx as HTML
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"cJbLI3pAcwgvzLB0AJQqrp+cLldWcNNJMmY1Zhr6wpg=", "utf8"=>"✓", "live_url"=>"http://playlists.1sfx.net/1202220/divx/2299610.xml"}
+Rendered home/_divx.erb (3.6ms)
+Rendered home/_divx.erb (4.0ms)
+Rendered home/_divx.erb (3.6ms)
+Rendered home/_divx.erb (3.8ms)
+Rendered home/_divx.erb (4.2ms)
+Rendered home/divx.html.erb within layouts/application (49.3ms)
+Completed 200 OK in 2162ms (Views: 60.4ms | ActiveRecord: 0.0ms)
