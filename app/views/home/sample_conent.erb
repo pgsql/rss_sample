@@ -1,5 +1,5 @@
-<%  sample = {} %>
-            <%  content = data["content"].inspect %>
+            <%  sample = {} %>
+            <%  content = data["content"] %>
             <%  sample = content.first if content.class.to_s == "Array"  %>
             <%  sample = content if content.class.to_s == "Hash"  %>
 

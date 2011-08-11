@@ -5,16 +5,16 @@ require 'open-uri'
 class HomeController < ApplicationController
   def index
   end
-  def mrss
-  	begin
-      content = ""
-      content = IO.read(params['mrss_url'])
-      @data =  Hash.from_xml(content)
-      puts @data.inspect
-    rescue Exception => e
-     raise "Unable to read the file: #{e.message}"
-    end
-  end
+#  def mrss
+#  	begin
+#      content = ""
+#      content = IO.read(params['mrss_url'])
+#      @data =  Hash.from_xml(content)
+#      puts @data.inspect
+#    rescue Exception => e
+#     raise "Unable to read the file: #{e.message}"
+#    end
+#  end
 
   def mrss_media
   	begin
@@ -54,20 +54,20 @@ class HomeController < ApplicationController
     end
   end
 
-  def live_sample
-  	begin
-      content = ""
-      open(params['live_url']) do |s| content = s.read end
-      File.open('test2.xml', 'w') do |f2|
-        f2.puts content
-      end
-      @data =  Hash.from_xml(content)
-      puts @data.inspect
-    rescue Exception => e
-     raise "Unable to read the file: #{e.message}"
-    end
-
-
-   
-  end
+#  def live_sample
+#  	begin
+#      content = ""
+#      open(params['live_url']) do |s| content = s.read end
+#      File.open('test2.xml', 'w') do |f2|
+#        f2.puts content
+#      end
+#      @data =  Hash.from_xml(content)
+#      puts @data.inspect
+#    rescue Exception => e
+#     raise "Unable to read the file: #{e.message}"
+#    end
+#
+#
+#
+#  end
 end

@@ -1,0 +1,46 @@
+<% content1 = data["content"]%> <br/>
+<% if data && data["title"] %>
+      Title: <%= data["title"] %> <br/>
+<% end %>
+
+<% if data && data["author"] %>
+  Author: <%= data["author"] %> <br/>
+<% end  %>
+
+<% if data && data["guid"] %>
+  GUID: <%= data["guid"] %> <br/>
+<% end  %>
+
+<% if data && data["link"] %>
+  Link: <%= data["link"] %> <br/>
+<% end  %>
+<% if data && data["description"] %>
+  Description: <%= data["description"] %> <br/>
+<% end  %>
+<% if data && data["keywords"] %>
+  Keywords: <%= data["keywords"] %> <br/>
+<% end  %>
+<% if data && data["tags"] %>
+    Tags: <%= data["tags"] %> <br/>
+<% end %>
+<%  content1 = data["group"]["content"] if content1.blank? %>
+<% if content1.class.to_s == "Hash" %>
+  Content URL:<%= content1["url"] %> <br/>
+  <% if content1 && content1["keywords"] %>
+    Content Keywords: <%= content1["keywords"] %> <br/>
+  <% end %>
+  <% if content1 && content1["tags"] %>
+    Content Tags: <%= content1["tags"] %> <br/>
+  <% end %>
+<% end  %>
+<% if content1.class.to_s == "Array" %>
+  <%  sample = content1.first  %>
+    <%  content1.each do |media| %>
+      <%  sample["fileSize"] = 0 if sample && sample["fileSize"] == "" %>
+      <% if sample && (sample["fileSize"].to_i < media["fileSize"].to_i) %>
+        <% sample = media %>
+      <% end %>
+    <% end %>
+  Content URL:<%=sample["url"]  %> <br/>
+<% end  %>
+
