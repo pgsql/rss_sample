@@ -56,6 +56,19 @@ class HomeController < ApplicationController
     end
   end
 
+  def divx
+    begin
+      content = ""
+      open(params['live_url']) do |s| content = s.read end
+      File.open('divx.xml', 'w') do |f2|
+        f2.puts content
+      end
+      @data =  Hash.from_xml(content)
+    rescue Exception => e
+     raise "Unable to read the file: #{e.message}"
+    end
+  end
+
 
   def itunes_live
     begin
