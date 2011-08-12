@@ -2,6 +2,18 @@
 <br/> <br/>
 <br/> <br/>
 
+
+<%= form_tag(:controller => "home", :action => "mrss_media") do %>
+  <div class="field">
+  <%= label_tag(:q, "MRSS Live URL with multile media content:") %>
+  <%= text_field_tag(:live_url,"http://playlists.1sfx.net/1202220/os/2299610.xml") %>
+  <%= submit_tag("Search") %>
+  </div>
+<% end %>
+
+<br/> <br/>
+<br/> <br/>
+
 <%= form_tag(:controller => "home", :action => "itunes") do %>
   <div class="field">
   <%= label_tag(:q, "ITUNES Live URL:") %>
@@ -10,15 +22,6 @@
   </div>
 <% end %>
 
-<br/> <br/>
-<br/> <br/>
-<%= form_tag(:controller => "home", :action => "mrss_media") do %>
-  <div class="field">
-  <%= label_tag(:q, "MRSS Live URL with multile media content:") %>
-  <%= text_field_tag(:live_url,"http://playlists.1sfx.net/1202220/os/2299610.xml") %>
-  <%= submit_tag("Search") %>
-  </div>
-<% end %>
 
 <br/> <br/>
 <br/> <br/>
