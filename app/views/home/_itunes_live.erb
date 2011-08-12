@@ -1,0 +1,48 @@
+      <% if data && data["name"] %>
+        Name: <%= data["name"] %> <br/>
+      <% end  %>
+      
+      <% if data && data["title"] %>
+        Title: <%= data["title"] %> <br/>
+      <% end  %>
+
+      <% content1 = data["content"]%>
+      <% if data && data["content"] %>
+        Content: <%= content1.html_safe %> <br/>
+      <% end  %>
+
+      <% if data && data["id"] %>
+       ID: <%= data["id"] %> <br/>
+      <% end  %>
+
+      <% if data && data["link"].class.to_s == "Array" %>
+         Link: <%= data["link"].first["href"] %> <br/>
+      <% end  %>
+      <% if data && data["link"].class.to_s == "Hash" %>
+         URL:<%= data["href"]  %> <br/>
+      <% end  %>
+         
+
+      <% if data && data["enclosure"] %>
+        URL:  <%= data["enclosure"]["url"] unless data["enclosure"].blank?  %><br/>
+      <% end %>
+
+      <% if data && data["description"] %>
+        Description: <%= data["description"] %> <br/>
+      <% end  %>
+      <% if data && data["keywords"] %>
+        Keywords: <%= data["keywords"] %> <br/>
+      <% end  %>
+
+      <% if content1.class.to_s == "Hash" %>
+        Content URL:<%= content1["url"] %> <br/>
+          <% if content1 && content1["keywords"] %>
+            Content Keywords: <%= content1["keywords"] %> <br/>
+          <% end %>
+          <% if content1 && content1["tags"] %>
+            Content Tags: <%= content1["tags"] %> <br/>
+          <% end %>
+      <% end  %>
+      <% if content1.class.to_s == "Array" %>
+         Content URL:<%= content1.first["url"]  %> <br/>
+      <% end  %>

@@ -1,0 +1,37 @@
+<h3>RSS Root Values <br></h3>
+<%  @data = data_object%>
+
+<% @data = @bak_data = @data['feed'] %>
+
+<% if @data && @data["id"] %>
+  ID: <%= @data["id"] %> <br/>
+<% end %>
+
+<% if @data && @data["title"] %>
+  Title: <%= @data["title"] %> <br/>
+<% end %>
+
+<% if @data && @data["link"] %>
+  Link: <%= @data["link"] %> <br/>
+<% end %>
+  
+<% if @data && @data["description"] %>
+  Description: <%= @data["description"] %> <br/>
+<% end %>
+
+<% if  @data["entry"].class.to_s == "Array" %>
+  <h3>Items <br/></h3>
+  <% @data["entry"].each do |data|  %>
+  ---------------------------------------------------------<br/>
+   <%= render :partial =>'itunes_live', :locals => {:data => data } %>
+  <% end %>
+<% else %>
+  <h3>Item <br></h3>
+  <%  data = @data["entry"] %>
+  <%= render :partial =>'itunes_live', :locals => {:data => data } %>
+<% end  %>
+
+
+<h1>BODY: <br></h1>
+
+<%= @bak_data.inspect %> <br/>

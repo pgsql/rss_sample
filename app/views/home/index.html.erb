@@ -11,16 +11,23 @@
   </div>
 <% end %>
 
+
+
 <br/> <br/>
 <br/> <br/>
 
-<%= form_tag(:controller => "home", :action => "itunes") do %>
+<%= form_tag(:controller => "home", :action => "itunes_live") do %>
   <div class="field">
-  <%= label_tag(:q, "ITUNES Live URL:") %>
-  <%= text_field_tag(:live_url,"http://www.vodcars.com/fastlanedaily/rss") %>
+  <%= label_tag(:q, "ITUNES Live UR from ITunes Site:") %>
+  <%= text_field_tag(:live_url,"http://ax.itunes.apple.com/WebObjects/MZStoreServices.woa/ws/RSS/topsongs/limit=10/xml") %>
   <%= submit_tag("Search") %>
   </div>
 <% end %>
+
+<br/> <br/>
+<br/> <br/>
+
+
 
 
 <br/> <br/>

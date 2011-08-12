@@ -4,9 +4,11 @@ Rss::Application.routes.draw do
 
   match 'home/mrss' => 'home#mrss'
   match 'home/itunes' => 'home#itunes'
+  match 'home/itunes_live' => 'home#itunes_live'
   match 'home/divx' => 'home#divx'
   match 'home/mrss_media' => 'home#mrss_media'
   match 'home/live_sample' => 'home#live_sample'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

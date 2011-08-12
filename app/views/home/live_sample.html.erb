@@ -18,7 +18,7 @@
 
 <br/><br/><br/><br/><br/>
 
-<% if  @data["channel"]["item"].class.to_s == "Array" %>
+<% if  @data["channel"]  && @data["channel"]["item"].class.to_s == "Array" %>
   <h3>Items <br></h3>
   <% @data["channel"]["item"].each do |data|  %>
 ---------------------------------------------------------<br/>
